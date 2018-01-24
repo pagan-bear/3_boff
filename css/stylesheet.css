@@ -1,0 +1,52 @@
+/* stylesheet.css */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,700|Open+Sans|Open+Sans+Condensed:300,700');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@font-face { font-family: 'neosans';
+	src: url('../fonts/neosans/neosans.woff') format('woff'),
+		  url('../fonts/neosans/neosans.woff2') format ('woff2'),
+		  url('../fonts/neosans/neosans.otf') format ('opentype');
+} /* neosans */
+@font-face { font-family: 'stainy'; 
+	src: url('../fonts/stainy/stainy-personaluseonly.woff') format('woff'),
+		  url('../fonts/stainy/stainy-personaluseonly.woff2') format('woff2'),
+		  url('../fonts/stainy/stainy-personaluseonly.ttf') format('truetype');
+} /* stainy */
+
+body { position: relative; padding-top: 50px; background-color: #333;  margin-top: 0; }
+p { margin: 0 }
+section { padding-top: 50px; margin-top: -50px; }
+.container-fluid { padding: 0; margin: 0; }
+.container { width: 70%; margin: auto; padding: 0; min-height: 240px;}
+/*.container { width: 70%; border: 1px solid black; margin: auto; padding: 0; min-height: 240px; } */
+
+.bg-gray1-c-white { background-color: #333333; color: white; }
+.bg-gray2-c-gray3 { background-color: #ededed; color: #7b7b7b; }
+.bg-gray5-c-gray1 { background-color: #f0f0f0; color: #333333}
+.bg-white-c-gray1 { background-color: white; color: #777777; }
+.bg-white-c-gray5 { background-color: white; color: #909090; }
+.bg-white-c-gray4 { background-color: white; color: #909090; }
+.bg-white-c-red { background-color: white; color: #f10f24; }
+.bg-red-c-white { background-color: #f10f24; color: white; }
+
+.nav.navbar { width: 70%;  padding: 1px; ; }
+.fa-map-marker { padding-left: 5px; }
+#logo-red { font-family: 'Raleway', cursive; font-size: 18px; color: #f10f24; font-weight: bold; padding-left:5px; padding-right: 3px;}
+#logo-white { font-family: 'Raleway', sans-serif; font-size: 18px; color: white; font-weight: bold; }
+#navbar { background-color: #212121!important; }
+ul { font-family: 'Open Sans Condensed', sans-serif; }
+a.nav-link { padding: 5px 0px; }
+a.nav-link:hover { background-color: #f10f24; color: white!important; }
+a.nav-link:focus { background-color: #f10f24; color: white!important; }
+a.navbar-brand { margin: 0 5px;}
+i.fa { display: block; }
+
+/* The Standard Bootstrap 4.x Breakpoints */
+@media all and (max-width: 1199px) { ... }
+@media all and (max-width: 991px) { ... }
+@media all and (max-width: 768px) {
+	body {  }
+	.nav.navbar { padding: 5px 0px; }
+}
+@media all and (max-width: 575px) { ... }
