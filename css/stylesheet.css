@@ -18,17 +18,20 @@ body { position: relative; padding-top: 50px; background-color: #212121;  margin
 p { margin: 0 }
 section { padding-top: 50px; margin-top: -50px; }
 .container-fluid { padding: 0; margin: 0; }
-.container { width: 70%; margin: auto; padding: 0; min-height: 240px;}
+.container { width: 70%; margin: auto; padding: 0; height: auto; }
+img { margin: 0px 0px 10px 0px; }
 /*.container { width: 70%; border: 1px solid black; margin: auto; padding: 0; min-height: 240px; } */
 
 /* Section styles */
+.bg-gray5-c-white { background-color: #f0f0f0; color: white; }
+.bg-gray3-c-white { background-color: #7b7b7b; color: white; }
+.bg-gray4-c-white { background-color: #909090; color: white; }
 .bg-gray1-c-white { background-color: #333333; color: white; }
 .bg-gray2-c-gray3 { background-color: #ededed; color: #7b7b7b; }
-.bg-gray5-c-gray1 { background-color: #f0f0f0; color: #333333}
+.bg-gray5-c-gray1 { background-color: #f0f0f0; color: #333333; }
 .bg-white-c-gray1 { background-color: white; color: #777777; }
-.bg-white-c-gray5 { background-color: white; color: #909090; }
 .bg-white-c-gray4 { background-color: white; color: #909090; }
-.bg-white-c-red { background-color: white; color: #f10f24; }
+. { background-color: white; color: #f10f24; }
 .bg-red-c-white { background-color: #f10f24; color: white; }
 
 /* Navbar styles */
@@ -67,20 +70,24 @@ i.fa { display: block; }
 
 }
 
+/* Button styles */
+.btn-register { display: inline; background-color: #f10f45; color: white; width: 110px; height: 40px; text-transform: uppercase; margin: 10px 0px 10px 10px; border: 1px solid #212121;}
+
 
 /* Social icon styles */
-span.fa-stack.fa-lg {
-	text-decoration: none;
-	color: #f0f0f0;
-	font-size: 24px;
-	margin-left: 25px!important;
-	margin-right: 25px!important;
-	margin: 0;
-	margin-top: -24px;
-	background-color: #212121;
-	border-bottom: 2px solid white;
+.fa-social { font-size: 48px;
+	margin-top: -32px;
+	color: #333;
+	background-color: rgba(240, 240, 240, 0.75);
+	padding: 10px 10px 5px 10px;
+	margin-left: 25px;
+	margin-right: 25px;
 }
-span.fa-stack.fa-lg:hover { color: red; }
+.fa-social:hover {
+	background-color: white;
+	color: red;
+	text-decoration: none;
+}
 
 /* The Standard Bootstrap 4.x Breakpoints */
 @media all and (max-width: 1199px) { ... }
