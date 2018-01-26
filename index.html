@@ -22,8 +22,9 @@
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 		<!-- Festival navbar -->
 		<header>
+			<div class="container-fluid bg-white-c-red">
 				<!-- Gray with white text -->
-				<nav class="nav navbar navbar-expand-md bg-dark navbar-dark fixed-top mx-auto" id="navbar">
+				<nav class="nav navbar navbar-expand-md navbar-dark fixed-top mx-auto" id="navbar">
 					<!-- Brand -->
 					<a class="navbar-brand logo-white" href="#map"><span class="fa fa-map-marker"></span><span class="logo-red"> BOFF</span><span class="logo-white">2018</span></a>
 					<!-- Toggler/collapsibe Button -->
@@ -43,6 +44,7 @@
 						</ul>
 					</div>
 				</nav>
+			</div>
 		</header>
 		
 		<!-- Festival carousel -->
@@ -71,11 +73,63 @@
 			</div>
 		</section>
 		
+		<!-- Festival banner -->
+		<div class="container-fluid bg-red-c-white" >
+			<div class="container">
+				<div class="row" id="festival-banner">
+					<div class="d-block position-relative col-sm-6 text-center" id="block-left">
+						<p><span class="sub-heading">Aug 5<sup>th</sup>&ndash;8<sup>th</sup></span></p>
+						<p><span class="heading">2014</span></p>
+					</div>
+					<div class="d-block position-relative col-sm-6 text-center">
+						<p><span class="heading">Screens</span></p>
+						<p><span class="sub-heading">6pm&ndash;midnight</span></p>
+					</div>
+					<img class="d-block position-absolute img-fluid" id="clock-img-bg" src="img/clock-background.png" alt="">
+					<img class="d-block position-absolute img-fluid" id="clock-img" src="img/clock-outline.png" alt="">
+				</div>
+			</div>
+		</div>
+		
+		<!-- Festival summary -->
+		<div class="container-fluid bg-white-c-gray4" id="festival-summary">
+			<div class="container">
+				<div class="row d-flex text-center align-items-center" style="height:auto; padding-top:50px; color:#333">
+					<div class="col-sm-3">
+						<i class="d-inline-block fa fa-map-marker fa-3x border-square"></i><span class="d-inline align-top">Venue</span>
+					</div>
+					<div class="col-sm-3">
+						<i class="d-inline-block fa fa-video-camera fa-3x border-square"></i><span class="d-inline align-top">3 Big Screens</span>
+					</div>
+					<div class="col-sm-3">
+						<i class="d-inline-block fa fa-users fa-3x border-square"></i><span class="d-inline align-top">Sponsors</span>
+					</div>
+					<div class="col-sm-3">
+						<i class="d-inline-block fa fa-user fa-3x border-square"></i><span class="d-inline align-top">Seating left</span>
+					</div>
+				</div>
+				<div class="row d-flex text-center align-items-center" style="height:auto; font-size:12px; padding-top: 5px; color:#333">
+					<div class="col-sm-3">
+						<span class="d-inline align-top">Brooklyn Bridge Park</span>
+					</div>
+					<div class="col-sm-3">
+						<span class="d-inline align-top">Park 1, 2, 3</span>
+					</div>
+					<div class="col-sm-3">
+						<span class="d-inline-block align-top" style="padding-bottom: 10px;">Brooklyn Borough Hall, Brooklyn Bridge Park</span>
+					</div>
+					<div class="col-sm-3">
+						<span class="d-inline align-top"><span style="color:#f10f24; font-weight: bold;">1223</span> / 5000</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
 		<!-- Festival pricing -->
-		<div class="container-fluid bg-white-c-gray4">
+		<div class="container-fluid bg-gray6-c-white">
 			<div class="container d-flex justify-content-center align-items-center">
 				<div class="align-middle">
-					<p style="padding: 25px;">As always, addmission if free.  But you <span>must</span> pre-register: <a href="#register"><button class="btn-register">Register</button></a></p>
+					<p style="padding: 25px;">As always addmission if free, but you <span style="color:#f10f24; font-weight: bold; font-size: 24px;text-shadow:2px 2px #333;">must</span> pre-register: <a href="#register"><button class="btn-register">Register</button></a></p>
 				</div>
 			</div>
 		</div>
@@ -105,14 +159,7 @@
 			</div>
 		</div>
 
-		<div class="container-fluid bg-white-c-gray4">
-		</div>
-		
-		<!-- Festival banner -->
-		<div class="container-fluid bg-red-c-white">
-			<div class="container">
-				<p>Festival Banner</p>
-			</div>
+		<div class="container-fluid bg-white-c-gray1">
 		</div>
 		
 		<!-- Festival countdown -->
@@ -149,7 +196,7 @@
 		
 		<!-- Trailers -->
 		<section id="trailers">
-			<div class="container-fluid bg-white-c-gray4">
+			<div class="container-fluid bg-white-c-gray1">
 				<div class="container page-header">
 					<p class="row h-100 justify-content-center align-items-center">Trailers</p>
 				</div>
@@ -167,7 +214,7 @@
 		
 		<!-- News -->
 		<section id="news">
-			<div class="container-fluid bg-white-c-gray4">
+			<div class="container-fluid bg-white-c-gray1">
 				<div class="container">
 					<p class="row h-100 justify-content-center align-items-center">News</p>
 				</div>
@@ -218,10 +265,18 @@
 		
 		<!-- JavaScript/jQuery libraries -->
 		<!-- Bootstrap 4 -->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 		<!-- Local JavaScript/jQuery -->
-		<script src="js/javascript.js"></script>
+		<script>
+		$(document).ready(function() {
+			$('.nav-link').click(function() {
+				var sectionTo = $(this).attr('href');
+				$('html, body').animate({
+					scrollTop: $(sectionTo).offset().top
+				}, 1500);});
+		});
+		</script>
 	</body>
 </html>

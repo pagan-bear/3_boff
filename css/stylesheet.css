@@ -15,23 +15,38 @@
 } /* stainy */
 
 body { position: relative; padding-top: 50px; background-color: #212121;  margin-top: 0; }
-p { margin: 0 }
+p { margin: 0; }
 section { padding-top: 50px; margin-top: -50px; }
 .container-fluid { padding: 0; margin: 0; }
-.container { width: 70%; margin: auto; padding: 0; height: auto; }
+.container { width: 70%; margin: auto; padding: 0; min-height: 20px; }
 img { margin: 0px 0px 10px 0px; }
-/*.container { width: 70%; border: 1px solid black; margin: auto; padding: 0; min-height: 240px; } */
+
+/* Festival banner */
+#festival-banner { height: auto; }
+.sub-heading { font-family: 'Raleway', sans-serif; font-size: 18px; }
+.heading { font-family: 'Raleway', sans-serif; font-size: 32px; font-weight: bold; margin-top: 10px;}
+img#clock-img { transform: translate( 305%, -20% ); max-width: 130px; height: auto; }
+img#clock-img-bg { max-width: 150px; height: auto; transform: translate( 258%, -23%)}
+#block-left { padding-top: 5px; }
+
+/* Festival summary */
+.border-square {   color: #b0b0b0;  border-radius:25%; border: 1px solid #b0b0b0; width:36px; }
+#festival-summary i { padding: 0px; font-size: 32px; margin-right: 10px;}
+
 
 /* Section styles */
-.bg-gray5-c-white { background-color: #f0f0f0; color: white; }
-.bg-gray3-c-white { background-color: #7b7b7b; color: white; }
-.bg-gray4-c-white { background-color: #909090; color: white; }
 .bg-gray1-c-white { background-color: #333333; color: white; }
 .bg-gray2-c-gray3 { background-color: #ededed; color: #7b7b7b; }
+.bg-gray3-c-white { background-color: #7b7b7b; color: white; }
+.bg-gray4-c-white { background-color: #909090; color: white; }
 .bg-gray5-c-gray1 { background-color: #f0f0f0; color: #333333; }
-.bg-white-c-gray1 { background-color: white; color: #777777; }
+.bg-gray5-c-white { background-color: #f0f0f0; color: white; }
+.bg-gray6-c-white { background-color: #777777; color: white; }
+.bg-gray7-c-white { background-color: #212121; color: white; }
+.bg-white-c-gray1 { background-color: white; color: #333333; }
 .bg-white-c-gray4 { background-color: white; color: #909090; }
-. { background-color: white; color: #f10f24; }
+.bg-white-c-gray6 { background-color: white; color: #777777; }
+.bg-white-c-red { background-color: white; color: #f10f24; }
 .bg-red-c-white { background-color: #f10f24; color: white; }
 
 /* Navbar styles */
@@ -49,7 +64,7 @@ a.navbar-brand { margin: 0 5px;}
 i.fa { display: block; }
 
 /* Carousel styles */
-.carousel { height: 350px; width: 75%; margin: 20px; border: 2px solid white; }
+.carousel { height: 350px; width: 75%; margin: 20px; margin-bottom: 80px; border: 2px solid white; }
 .carousel-indicators li{
 	border-radius: 30px;
 	width: 8px;
@@ -71,7 +86,7 @@ i.fa { display: block; }
 }
 
 /* Button styles */
-.btn-register { display: inline; background-color: #f10f45; color: white; width: 110px; height: 40px; text-transform: uppercase; margin: 10px 0px 10px 10px; border: 1px solid #212121;}
+.btn-register { display: inline; background-color: #f10f24; color: white; width: 110px; height: 40px; text-transform: uppercase; margin: 10px 0px 10px 10px; border: 1px solid #212121;}
 
 
 /* Social icon styles */
