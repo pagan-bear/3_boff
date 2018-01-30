@@ -37,7 +37,6 @@
 							<li class="active"><a class="nav-link" href="#home"><i class="fa fa-home"></i> Home<span class="sr-only"></span></a></li>
 							<li class="nav-item"><a class="nav-link" href="#register"><i class="fa fa-ticket"></i> Register</a></li>
 							<li class="nav-item"><a class="nav-link" href="#schedule"><i class="fa fa-clock-o"></i> Schedule</a></li>
-							<li class="nav-item"><a class="nav-link" href="#trailers"><i class="fa fa-video-camera"></i> Trailers</a></li>
 							<li class="nav-item"><a class="nav-link" href="#gallery"><i class="fa fa-camera"></i> Gallery</a></li>
 							<li class="nav-item"><a class="nav-link" href="#news"><i class="fa fa-rss"></i> News</a></li>
 							<li class="nav-item"><a class="nav-link" href="#about"><i class="fa fa-info-circle"></i> About</a></li>
@@ -162,7 +161,7 @@
 		<!-- Festival partners -->
 		<div class="container-fluid bg-gray5-c-gray1" id="festival-partners">
 			<div class="container">
-				<p class="row h-100 justify-content-center align-items-center" style="padding-bottom: 20px;">Festival partners</p>
+				<h2 class="row h-100" style="padding-bottom: 20px;">Festival partners</h2>
 				<div class="row">
 					<div class="col-lg-6 d-flex justify-content-center align-items-center ">
 						<div class="card h-100" style="margin-bottom: 20px; background-color:white">
@@ -185,49 +184,186 @@
 		</div>
 		
 		<!-- Spacer -->
-		<div class="container-fluid bg-white-c-gray1">
-		</div>
+		<div class="container-fluid bg-white-c-gray1"></div>
 		
 		<!-- Festival countdown -->
 		<div class="container-fluid bg-gray2-c-gray3">
 			<div class="container">
-				Festival Countdown
+				<h2>Festival Countdown</h2>
 			</div>
 		</div>
 		
 		<!-- Festival register -->
 		<section id="register">
 			<div class="container-fluid bg-white-c-gray1">
-				<div class="container page-header">
-					<p class="row h-100 justify-content-center align-items-center">Register</p>
-					<form class="form-inline justify-content-center justify-content-around">
-						<label class="sr-only" for="inlineFormInputName2">Name</label>
-						<input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
-						<label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
-						<div class="input-group mb-2 mr-sm-2">
-							<div class="input-group-prepend">
-								<div class="input-group-text">@</div>
-							</div>
-							<input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
-						</div>
-						<button type="submit" class="btn btn-primary mb-2">Submit</button>
-					</form>
+				<div class="container bg-white-c-gray1">
+					<h2>Register</h2>
 				</div>
 			</div>
 		</section>
 		
 		<!-- Festival schedule -->
-		<section id="schedule" class="bg-gray3-c-white">
+		<section id="schedule" class="bg-white-c-gray4">
 			<div class="container page-header" style="min-height: 200px;">
-				<p class="row h-100 justify-content-center align-items-center">Schedule</p>
-			</div>
-		</section>
-		
-		<!-- Trailers -->
-		<section id="trailers">
-			<div class="container-fluid bg-white-c-gray1">
-				<div class="container" style="min-height: 200px;">
-					<p class="row h-100 justify-content-center align-items-center">Trailers</p>
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Schedule</h2>
+						<ul id="tabsJustified" class="nav nav-tabs">
+							<li class="nav-item"><a href="" data-target="#aug5" data-toggle="tab" class="nav-link small text-uppercase active">Aug 5<sup>th</sup></a></li>
+							<li class="nav-item"><a href="" data-target="#aug6" data-toggle="tab" class="nav-link small text-uppercase ">Aug 6<sup>th</sup></a></li>
+							<li class="nav-item"><a href="" data-target="#aug7" data-toggle="tab" class="nav-link small text-uppercase">Aug 7<sup>th</sup></a></li>
+							<li class="nav-item"><a href="" data-target="#aug8" data-toggle="tab" class="nav-link small text-uppercase">Aug 8<sup>th</sup></a></li>
+						</ul>
+						<br>
+						
+						<div id="tabsJustifiedContent" class="tab-content">
+							<!-- August 5 -->
+							<div id="aug5" class="tab-pane fade active show">
+								<div class="d-flex row pb-2">
+									<div class="col-12">
+										<span class="film-category">Jason Night!</span><hr>
+										<div class="d-flex scroll-content">
+											<div class="film-details">
+												<span class="clock-and-sch"><i class="fa fa-clock-o d-inline-block" aria-hidden="true"></i> 18:00</span>
+												<span class="film-title">Jason Goes to Hell: The Final Friday</span>
+												<span class="film-year">(1993)</span><br>
+												<span class="film-cast my-3">Kane Hodder, John D. LeMay, Steven Williams, Erin Gray</span><br>
+												<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br><br>
+												<div class="row d-flex justify-content-between">
+													<div class="film-footer align-self-center">
+														<img class="d-flex bad-tomato justify-content-between" src="img/bad-tomato.png">
+														<span class="bt-score">24%</span>
+													</div>
+													<button class="btn btn-film-register align-self-center">Register</button>
+												</div>
+											</div>
+											<div class="col-5">
+												<div class="container img-fluid" id="vid-bg-1">
+													<iframe src="https://www.youtube.com/embed/PrIShIfjHeM" width="480px" height="270px" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+												</div>
+											</div>
+										</div><hr>
+										<div class="d-flex scroll-content">
+											<div class="film-details">
+												<span class="clock-and-sch"><i class="fa fa-clock-o d-inline-block" aria-hidden="true"></i> 18:00</span>
+												<span class="film-title">Jason Goes to Hell: The Final Friday</span>
+												<span class="film-year">(1993)</span><br>
+												<span class="film-cast my-3">Kane Hodder, John D. LeMay, Steven Williams, Erin Gray</span><br>
+												<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br><br>
+												<div class="row d-flex justify-content-between">
+													<div class="film-footer align-self-center">
+														<img class="d-flex bad-tomato justify-content-between" src="img/bad-tomato.png">
+														<span class="bt-score">24%</span>
+													</div>
+													<button class="btn btn-film-register align-self-center">Register</button>
+												</div>
+											</div>
+											<div class="col-5">
+												<div class="container img-fluid" id="vid-bg-1">
+													<iframe src="https://www.youtube.com/embed/kJmNEJALe6k" width="480px" height="270px" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+												</div>
+											</div>
+										</div><hr>
+										<div class="d-flex scroll-content">
+											<div class="film-details">
+												<span class="clock-and-sch"><i class="fa fa-clock-o d-inline-block" aria-hidden="true"></i> 18:00</span>
+												<span class="film-title">Jason Goes to Hell: The Final Friday</span>
+												<span class="film-year">(1993)</span><br>
+												<span class="film-cast my-3">Kane Hodder, John D. LeMay, Steven Williams, Erin Gray</span><br>
+												<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br><br>
+												<div class="row d-flex justify-content-between">
+													<div class="film-footer align-self-center">
+														<img class="d-flex bad-tomato justify-content-between" src="img/bad-tomato.png">
+														<span class="bt-score">24%</span>
+													</div>
+													<button class="btn btn-film-register align-self-center">Register</button>
+												</div>
+											</div>
+											<div class="col-5">
+												<div class="container img-fluid" id="vid-bg-1">
+													<iframe width="480px" height="270px" src="https://www.youtube.com/embed/ipbCUW3umJU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+												</div>
+											</div>
+										</div><hr>
+									</div>
+								</div>
+							</div>		<!-- August 5 -->
+
+							<!-- August 6 -->
+							<div id="aug6" class="tab-pane fade">
+								<div class="d-flex row pb-2">
+									<div class="col-12">
+										<span class="film-category">Black &amp; White Classics</span><hr>
+										<div class="d-flex scroll-content">
+											<div class="film-details">
+												<span class="clock-and-sch"><i class="fa fa-clock-o d-inline-block" aria-hidden="true"></i> 18:00</span>
+												<span class="film-title">Casablanca</span>
+												<span class="film-year">(1942)</span><br>
+												<span class="film-cast my-3">Kane Hodder, John D. LeMay, Steven Williams, Erin Gray</span><br>
+												<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br><br>
+												<div class="row d-flex justify-content-between">
+													<div class="film-footer align-self-center">
+														<img class="d-flex bad-tomato justify-content-between" src="img/bad-tomato.png">
+														<span class="bt-score">24%</span>
+													</div>
+													<button class="btn btn-film-register align-self-center">Register</button>
+												</div>
+											</div>
+											<div class="col-5">
+												<div class="container img-fluid" id="vid-bg-1">
+													<iframe width="480" height="270" src="https://www.youtube.com/embed/BkL9l7qovsE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+												</div>
+											</div>
+										</div><hr>
+										
+										<div class="d-flex scroll-content">
+											<div class="film-details">
+												<span class="clock-and-sch"><i class="fa fa-clock-o d-inline-block" aria-hidden="true"></i> 18:00</span>
+												<span class="film-title">What Ever Happened to Baby Jane?</span>
+												<span class="film-year">(1962)</span><br>
+												<span class="film-cast my-3">Kane Hodder, John D. LeMay, Steven Williams, Erin Gray</span><br>
+												<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br><br>
+												<div class="row d-flex justify-content-between">
+													<div class="film-footer align-self-center">
+														<img class="d-flex bad-tomato justify-content-between" src="img/bad-tomato.png">
+														<span class="bt-score">24%</span>
+													</div>
+													<button class="btn btn-film-register align-self-center">Register</button>
+												</div>
+											</div>
+											<div class="col-5">
+												<div class="container img-fluid" id="vid-bg-1">
+													<iframe width="480" height="270" src="https://www.youtube.com/embed/3qFYjkFCxiE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+												</div>
+											</div>
+										</div><hr>
+										<div class="d-flex scroll-content">
+											<div class="film-details">
+												<span class="clock-and-sch"><i class="fa fa-clock-o d-inline-block" aria-hidden="true"></i> 18:00</span>
+												<span class="film-title">Metropolis</span>
+												<span class="film-year">(1927)</span><br>
+												<span class="film-cast my-3">Kane Hodder, John D. LeMay, Steven Williams, Erin Gray</span><br>
+												<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br><br>
+												<div class="row d-flex justify-content-between">
+													<div class="film-footer align-self-center">
+														<img class="d-flex bad-tomato justify-content-between" src="img/bad-tomato.png">
+														<span class="bt-score">24%</span>
+													</div>
+													<button class="btn btn-film-register align-self-center">Register</button>
+												</div>
+											</div>
+											<div class="col-5">
+												<div class="container img-fluid" id="vid-bg-1">
+													<iframe width="480" height="270" src="https://www.youtube.com/embed/on2H8Qt5fgA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+												</div>
+											</div>
+										</div><hr>
+									</div>
+								</div>
+							</div>		<!-- August 5 -->
+
+						</div>			<!-- tab-content -->
+					</div>
 				</div>
 			</div>
 		</section>
@@ -235,43 +371,31 @@
 		<!-- Photo gallery -->
 		<section id="gallery">
 			<div class="container-fluid bg-gray5-c-gray1">
-				<div class="container">
-					<p class="row h-100 justify-content-center align-items-center">Photo gallery</p>
-					<div id="pg-body">
+				<div class="container" id="pg-body">
+					<h2>Photo Gallery</h2>
+					
+					<div class="row d-flex justify-content-between">
+						<div class="col-sm-6 d-block">
+							<img class="img-thumbnail" src="http://via.placeholder.com/95x95&amp;text=1" alt="img">
+							<img class="img-thumbnail" src="http://via.placeholder.com/95x95&amp;text=2" alt="img">
+							<img class="img-thumbnail" src="http://via.placeholder.com/95x95&amp;text=3" alt="img">
+							<img class="img-thumbnail" src="http://via.placeholder.com/95x95&amp;text=4" alt="img">
+							<img class="img-thumbnail" src="http://via.placeholder.com/95x95&amp;text=5" alt="img">
+							<img class="img-thumbnail" src="http://via.placeholder.com/95x95&amp;text=6" alt="img">
+							<img class="img-thumbnail" src="http://via.placeholder.com/95x95&amp;text=7" alt="img">
+							<img class="img-thumbnail" src="http://via.placeholder.com/95x95&amp;text=8" alt="img">
+							<img class="img-thumbnail" src="http://via.placeholder.com/95x95&amp;text=9" alt="img">
+							<img class="img-thumbnail" src="http://via.placeholder.com/95x95&amp;text=10" alt="img">
+							<img class="img-thumbnail" src="http://via.placeholder.com/95x95&amp;text=11" alt="img">
+							<img class="img-thumbnail" src="http://via.placeholder.com/95x95&amp;text=12" alt="img">
+						</div>
 
-						<select class="form-control d-inline" style="width: auto; color: #212121; margin-bottom: 10px; border: 1px solid #333; border-radius: 0px;" id="boff-year">
-							<option selected>Select a year</option>
-							<option value="2017">2017</option>
-							<option value="2016">2016</option>
-							<option value="2015">2015</option>
-							<option value="2014">2014</option>
-						</select><span style="margin-left: 20px;">Select a year to view a gallery</span>
-						<div class="d-flex row">
-							<div class="col-md-6 d-block">
-								<img class="img-thumbnail" src="img/pg-img-0.jpeg" style="width:100px; height: 100px;" alt="img">
-								<img class="img-thumbnail" src="img/pg-img-1.jpeg" style="width:100px; height: 100px;" alt="img">
-								<img class="img-thumbnail" src="img/pg-img-2.jpeg" style="width:100px; height: 100px;" alt="img">
-								<img class="img-thumbnail" src="img/pg-img-3.jpeg" style="width:100px; height: 100px;" alt="img">
-								<img class="img-thumbnail" src="img/pg-img-4.jpeg" style="width:100px; height: 100px;" alt="img">
-								<img class="img-thumbnail" src="img/pg-img-5.jpeg" style="width:100px; height: 100px;" alt="img">
-								<img class="img-thumbnail" src="img/pg-img-6.jpeg" style="width:100px; height: 100px;" alt="img">
-								<img class="img-thumbnail" src="img/pg-img-7.jpeg" style="width:100px; height: 100px;" alt="img">
-								<img class="img-thumbnail" src="img/pg-img-8.jpeg" style="width:100px; height: 100px;" alt="img">
-								<img class="img-thumbnail" src="img/pg-img-9.jpeg" style="width:100px; height: 100px;" alt="img">
-								<img class="img-thumbnail" src="img/pg-img-10.jpeg" style="width:100px; height: 100px;" alt="img">
-								<img class="img-thumbnail" src="img/pg-img-11.jpeg" style="width:100px; height: 100px;" alt="img">
-								<img class="img-thumbnail" src="img/pg-img-12.jpeg" style="width:100px; height: 100px;" alt="img">
-								<img class="img-thumbnail" src="img/pg-img-13.jpeg" style="width:100px; height: 100px;" alt="img">
-								<img class="img-thumbnail" src="img/pg-img-14.jpeg" style="width:100px; height: 100px;" alt="img">
-								<img class="img-thumbnail" src="img/pg-img-15.jpeg" style="width:100px; height: 100px;" alt="img">
-							</div>
-							
-							<div class="col-md-6 d-absolute" id="pg-carousel">
-								<img class="d-relative mt-1" style="border: 1px solid white; border-radius: .25rem; padding: .25rem; background-color: white; " src="img/pg-img-0.jpeg" style="width:433px; height: 250px;" alt="img">
-							</div>
+						<div class="col-sm-6 d-absolute" id="pg-carousel">
+							<img class="d-relative mt-1 img-fluid" style="border: 1px solid white; border-radius: .25rem; padding: .25rem; background-color: white; " src="img/pg-img-0.jpeg" style="width:100%;">
 						</div>
 
 					</div>
+
 				</div>
 			</div>
 		</section>
@@ -280,7 +404,7 @@
 		<section id="news">
 			<div class="container-fluid bg-white-c-gray1">
 				<div class="container" style="min-height: 200px;">
-					<p class="row h-100 justify-content-center align-items-center">News</p>
+					<h2 class="row h-100">News</h2>
 				</div>
 			</div>
 		</section>
@@ -289,7 +413,7 @@
 		<section id="about">
 			<div class="container-fluid bg-white-c-red">
 				<div class="container" style="min-height: 200px;">
-					<p class="row h-100 justify-content-center align-items-center">About</p>
+					<h2 class="row h-100">About</h2>
 				</div>
 			</div>
 		</section>
@@ -298,7 +422,7 @@
 		<section id="map">
 			<div class="container-fluid">
 				<div class="container">
-				<h3 id="map" style="background-color:#f10f24; color: white; font-weight: bold; padding-left:5px; padding-bottom: 5px;">Location Map</h3>
+				<h2 id="map" style="background-color:#f10f24; color: white; font-weight: bold; padding-left:5px; padding-bottom: 5px;">Location Map</h2>
 
 					<div id="map-banner">
 
