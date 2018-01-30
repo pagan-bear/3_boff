@@ -14,39 +14,12 @@
 		  url('../fonts/stainy/stainy-personaluseonly.ttf') format('truetype');
 } /* stainy */
 
+
 body { position: relative; padding-top: 50px; background-color: #212121;  margin-top: 0; }
 p { margin: 0; }
 section { padding-top: 50px; margin-top: -50px; }
 .container-fluid { padding: 0; margin: 0; }
 .container { width: 70%; margin: auto; padding: 0; min-height: 20px; }
-
-/* Festival banner */
-#festival-banner { height: auto; }
-.sub-heading { font-family: 'Raleway', sans-serif; font-size: 2.0vw; }
-.heading { font-family: 'Raleway', sans-serif; font-size: 4vw; font-weight: bold; margin-top: 10px; }
-#time-icon { left: 50%; max-width: 170px; height:auto; transform: translate( -50%, -15%); position: absolute; }
-#block-left { padding-top: 5px; padding-bottom: 5px;}
-
-/* Festival summary */
-.border-square {   color: #b0b0b0;  border-radius:25%; border: 1px solid #b0b0b0; width:36px; }
-#festival-summary i { padding: 0px; font-size: 32px; margin-right: 10px; color: #333; margin-top: 5px; }
-.card-subtext { font-size: 1vw; color: #212121; }
-
-/* Section styles */
-.bg-gray1-c-white { background-color: #333333; color: white; }
-.bg-gray2-c-gray3 { background-color: #ededed; color: #7b7b7b; }
-.bg-gray3-c-white { background-color: #7b7b7b; color: white; }
-.bg-gray4-c-white { background-color: #909090; color: white; }
-.bg-gray5-c-gray1 { background-color: #f0f0f0; color: #333333; }
-.bg-gray5-c-white { background-color: #f0f0f0; color: white; }
-.bg-gray6-c-white { background-color: #777777; color: white; }
-.bg-gray7-c-white { background-color: #212121; color: white; }
-.bg-white-c-gray1 { background-color: white; color: #333333; }
-.bg-white-c-gray4 { background-color: white; color: #909090; }
-.bg-white-c-gray6 { background-color: white; color: #777777; }
-.bg-white-c-red { background-color: white; color: #f10f24; }
-.bg-red-c-white { background-color: #f10f24; color: white; }
-.text-red { color: #f10f24; font-weight: bold; }
 
 /* Navbar styles */
 .navbar-collapse { background: #212121; }
@@ -69,32 +42,74 @@ i.fa { display: block; }
 .carousel-caption { left: 45px; }
 .carousel-indicators li{
 	border-radius: 30px;
-	width: 8px;
-	height: 8px;
+	width: 10px;
+	height: 10px;
 	cursor: pointer;
 	background-color: white;
 	margin-bottom: 10px;
-	border: 
+	border: 1px solid #212121; ;
 }
 .carousel-indicators .active {
 	border-radius: 30px;
-	width: 8px;
-	height: 8px;
+	width: 10px;
+	height: 10px;
 	cursor: pointer;
 	background-color: #f10f24;
 	margin-bottom: 10px;
-	border-color: 2px, black;
+	border: 1px solid #aaa;
 
 }
 .carousel-caption { top: 5%; bottom: auto; width: 90%; }
 .font-red-sm-title { font-family: 'Roboto', sans-serif; font-size: 1.2vw; color: #f10f24; font-weight: bolder; }
 .font-white-sm-title { font-family: 'Roboto', sans-serif; font-weight: 700; font-size: 1.2vw; color: white; }
-.font-red-bold-title { font-family: 'Roboto', sans-serif; font-weight: bold; color: #f10f24; font-size: 3.5vw; }
+.font-red-bold-title { font-family: 'Roboto', sans-serif; font-weight: bold; color: #f10f24; font-size: 3.5vw; text-shadow: 2px 2px slategray}
 .font-white-title { font-family: 'Open Sans Condensed', sans-serif; color: white; font-weight: 100; font-size: 3.5vw; }
 .font-white-subtitle { font-family: 'Open Sans Condensed', sans-serif; color: white; font-weight: bold; font-size: 1.6vw; padding-top: 30px; }
 
+/* Festival banner */
+#festival-banner { height: auto; }
+.sub-heading { font-family: 'Raleway', sans-serif; font-size: 2.0vw; }
+.heading { font-family: 'Raleway', sans-serif; font-size: 4vw; text-shadow: 5px 3px #212121; font-weight: bold; margin-top: 10px; }
+#time-icon { left: 50%; max-width: 170px; height:auto; transform: translate( -50%, -15%); }
+#block-left { padding-top: 5px; padding-bottom: 5px;}
+
+/* Festival summary */
+.border-square {   color: #b0b0b0;  border-radius:25%; border: 1px solid #b0b0b0; width:36px; }
+#festival-summary i { padding: 0px; font-size: 32px; margin-right: 10px; color: #333; margin-top: 5px; }
+.card-subtext { font-size: 1.1vw; font-weight: bold; color: #212121; }
+#festival-summary .card { font-size: 1.4vw; border: 1px solid #333; }
+#festival-summary .card-text { color: #212121; text-shadow: 2px 3px lightgray}
+#festival-summary { margin: 0px 0px 0px 0px; padding: 0px, 0px, 0px, 0px; }
+
+/* Festival pricing */
+#festival-pricing { height: 150px}
+
+/* Festival schedule styles*/
+.nav-tabs { border-bottom: 1px solid #333; }
+#festival-schedule .nav-link { font-family: 'Roboto', sans-serif; padding: 5px; }
+#festival-schedule a { font-family: 'Open Sans', sans-serif; color: #aaa; }
+#fextival-schedule a:hover { background-color: red; color: white; }
+#festival-schedule a:focus { background-color: #f10f24; color: white!important; }
+#festival-schedule a:active { background-color: #f10f14; color: white; }
+.film-category { font-family: 'Roboto', sans-serif; font-size: 28px; padding-top: 20px; text-shadow: 2px 4px #e1e1e1; }
+.film-title { font-family: 'Roboto', sans-serif; font-size: 16px; padding-left: 20px; }
+.film-year { padding-left: 10px; }
+.film-cast { font-family: 'Robotos', sans-serif; font-style: italic; font-size: 12px; font-weight: bold; color: dimgray; display: inline-block; margin: 10px 0px; }
+.bad-tomato { 24px; width: 24px; margin-top: 0px}
+.bt-score { padding-left: 10px; font-family: "Roboto", sans-serif; margin-top: 5px; }
+.film-btn { margin-top: 10px; }
+.clock-and-sch { background-color: #f10f24; color: white; padding: 3px 6px; font-weight: bold; }
+
 /* Button styles */
 .btn { display: inline; color: white; text-transform: uppercase; border: 1px solid #212121; border-radius: 0px; }
+.btn-film-trailer, .btn-film-website, .btn-film-register { margin-top: 15px; }
+.btn-film-trailer, .btn-film-website { background-color: #212121; color: white; }
+.btn-film-register { background-color: #f10f24; color: white; border: 1px solid #333; margin-bottom: 10px; }
+
+/* Photo gallery */
+.hide-bullets { list-style:none; }
+.thumbnail { display: inline-flex; }
+.carousel-inner>.item>img, .carousel-inner>.item>a>img { width: 50%; }
 
 /* Social icon styles */
 .fa-social { font-size: 48px;
@@ -105,16 +120,37 @@ i.fa { display: block; }
 	margin-left: 25px;
 	margin-right: 25px;
 }
-a:hover {
+a i.fa-social:hover {
 	color: #f10f24;
 	text-decoration: none;
 }
+a:hover { text-decoration: none; }
+
+/* Section styles */
+.bg-gray1-c-white { background-color: #333333; color: white; }
+.bg-gray2-c-gray3 { background-color: #ededed; color: #7b7b7b; }
+.bg-gray3-c-white { background-color: #7b7b7b; color: white; }
+.bg-gray4-c-white { background-color: #909090; color: white; }
+.bg-gray5-c-gray1 { background-color: #f0f0f0; color: #333333; }
+.bg-gray5-c-white { background-color: #f0f0f0; color: white; }
+.bg-gray6-c-white { background-color: #777777; color: white; }
+.bg-gray7-c-white { background-color: #212121; color: white; }
+.bg-white-c-gray1 { background-color: white; color: #333333; }
+.bg-white-c-gray4 { background-color: white; color: #909090; }
+.bg-white-c-gray6 { background-color: white; color: #777777; }
+.bg-white-c-red { background-color: white; color: #f10f24; }
+.bg-red-c-gray1 { background-color: #f10f24; color: #333; }
+.bg-red-c-white { background-color: #f10f24; color: white; }
+.text-red { color: #f10f24; font-weight: bold; }
 
 /* The Standard Bootstrap 4.x Breakpoints */
-@media all and (max-width: 1199px) { ... }
-@media all and (max-width: 991px) { ... }
+@media all and (max-width: 1199px) { }
+@media all and (max-width: 991px) { 
+	#time-icon { display: none; }
+	#block-left p, span { text-align: center; }
+	#block-right p, span { text-align: center; }
+}
 @media all and (max-width: 768px) {
-	body {  }
 	.nav.navbar { padding: 5px 0px; }
 }
-@media all and (max-width: 575px) { ... }
+@media all and (max-width: 575px) { }
