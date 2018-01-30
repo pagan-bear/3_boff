@@ -47,11 +47,10 @@
 			</div>
 		</header>
 		
-		<!-- Festival carousel -->
-		<section id="home">
-			<div class="container-fluid bg-gray1-c-white">
+		<!-- Banner carousel -->
+		<section id="home"> class="container-fluid bg-gray1-c-white">
 				<div class="container d-flex justify-content-center align-items-center">
-					<div id="carousel" class="carousel slide mx-auto" data-ride="carousel">
+					<div id="b-carousel" class="carousel slide mx-auto" data-ride="carousel">
 						<ol class="carousel-indicators">
 							<li data-target="#indicators" data-slide-to="0" class="active"></li>
 							<li data-target="#indicators" data-slide-to="1"></li>
@@ -59,98 +58,124 @@
 						</ol>
 						<div class="carousel-inner">
 							<div class="carousel-item active">
-								<img class="d-block w-100" src="..." alt="First slide">
+								<img src="img/outdoor-film-1.jpg" style="opacity:0.25; width: 100%; height: 350px;" class="img-fluid">
+								<div class="carousel-caption d-none d-sm-block justify-content-center text-left w-90">
+									<p><span class="font-red-sm-title">NEW</span><span class="font-white-sm-title">&nbsp;&ndash; AUGUST 2018</span></p><br>
+									<p><span class="font-red-bold-title"><b>Brooklyn Outdoor </b></span><span class="font-white-title"><b>Film Festival</b></span></p>
+									<p><span class="font-white-title">The Best Outdoor Movies</span></p>
+									<p class="font-white-subtitle text-right">Brooklyn Vibes Events Company</p>
+								</div>
 							</div>
 							<div class="carousel-item">
-								<img class="d-block w-100" src="..." alt="Second slide">
+								<img src="img/outdoor-film-2.jpg" style="opacity:0.25; width: 100%; height: 350px;" class="img-fluid">
+								<div class="carousel-caption d-none d-sm-block justify-content-center text-left w-90">
+									<p><span class="font-red-sm-title">NEW</span><span class="font-white-sm-title">&nbsp;&ndash; AUGUST 2018</span></p><br>
+									<p><span class="font-red-bold-title"><b>Brooklyn Outdoor </b></span><span class="font-white-title"><b>Film Festival</b></span><br></p>
+									<p><span class="font-white-title">3 Great Screens to View</span><br></p>
+									<p class="font-white-subtitle text-right">Brooklyn Vibes Events Company</p>
+								</div>
 							</div>
 							<div class="carousel-item">
-								<img class="d-block w-100" src="..." alt="Third slide">
+								<img src="img/outdoor-film-3.jpg" style="opacity:0.25; width: 100%; height: 350px;" class="img-fluid">
+								<div class="carousel-caption d-none d-sm-block justify-content-center text-left w-90">
+									<p><span><span class="font-red-sm-title">NEW</span><span class="font-white-sm-title">&nbsp;&ndash; AUGUST 2018</span></span></p><br>
+									<p><span class="font-red-bold-title"><b>Brooklyn Outdoor </b></span><span class="font-white-title"><b>Film Festival</b></span><br></p>
+									<p class="font-white-title">Reserve Your Seats Fast!</p>
+									<p class="font-white-subtitle text-right">Brooklyn Vibes Events Company</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 		</section>
 		
 		<!-- Festival banner -->
-		<div class="container-fluid bg-red-c-white" >
-			<div class="container">
+		<div class="container-fluid bg-red-c-white">
+			<div class="container img-fluid">
 				<div class="row" id="festival-banner">
-					<div class="d-block position-relative col-sm-6 text-center" id="block-left">
+					<div class="d-block position-relative col-sm-6 text-left" id="block-left">
 						<p><span class="sub-heading">Aug 5<sup>th</sup>&ndash;8<sup>th</sup></span></p>
 						<p><span class="heading">2014</span></p>
 					</div>
-					<div class="d-block position-relative col-sm-6 text-center">
-						<p><span class="heading">Screens</span></p>
+					<div class="d-block position-relative col-sm-6 text-right" id="block-right">
+						<p><span class="heading">3 Screens</span></p>
 						<p><span class="sub-heading">6pm&ndash;midnight</span></p>
 					</div>
-					<img class="d-block position-absolute img-fluid" id="clock-img-bg" src="img/clock-background.png" alt="">
-					<img class="d-block position-absolute img-fluid" id="clock-img" src="img/clock-outline.png" alt="">
+					<div class="d-block">
+						<img class="img-fluid position-absolute" id="time-icon" src="img/time-icon.png" alt="">
+					</div>
 				</div>
 			</div>
 		</div>
 		
 		<!-- Festival summary -->
-		<div class="container-fluid bg-white-c-gray4" id="festival-summary">
+		<div class="container-fluid bg-gray6-c-white" id="festival-summary" style="height: auto;">
 			<div class="container">
-				<div class="row d-flex text-center align-items-center" style="height:auto; padding-top:50px; color:#333">
-					<div class="col-sm-3">
-						<i class="d-inline-block fa fa-map-marker fa-3x border-square"></i><span class="d-inline align-top">Venue</span>
+				<div class="row">
+					<div class="col-lg-3 col-md-6 d-block justify-content-center align-items-center ">
+						<div class="card w-100 h-100 mt-5">
+							<div class="card-block">
+								<p class="card-text row justify-content-center align-items-center"><i class="fa fa-map-marker fa-3x border-square text-center"></i><span>Venue</span></p>
+								<p class="text-center card-subtext">Brooklyn Bridge Park</p>
+							</div>
+						</div>
 					</div>
-					<div class="col-sm-3">
-						<i class="d-inline-block fa fa-video-camera fa-3x border-square"></i><span class="d-inline align-top">3 Big Screens</span>
+					<div class="col-lg-3 col-md-6 d-block justify-content-center align-items-center">
+						<div class="card w-100 h-100 mt-5">
+							<div class="card-block">
+								<p class="card-text row justify-content-center align-items-center"><i class="fa fa-video-camera fa-3x border-square text-center"></i><span>3 Big Screens</span></p>
+								<span class="text-center card-subtext"><p>Peir 1, Peir 2, &amp; Peir 5</p></span>
+							</div>
+						</div>
 					</div>
-					<div class="col-sm-3">
-						<i class="d-inline-block fa fa-users fa-3x border-square"></i><span class="d-inline align-top">Sponsors</span>
+					<div class="col-lg-3 col-md-6 d-block justify-content-center align-items-center ">
+						<div class="card w-100 h-100 mt-5">
+							<div class="card-block" style="">
+								<p class="card-text row justify-content-center align-items-center"><i class="fa fa-users fa-3x border-square text-center"></i><span>Sponsors</span></p>
+								<p class="text-center card-subtext">Brooklyn Borough Hall<br>Brooklyn Bridge Park</p>
+							</div>
+						</div>
 					</div>
-					<div class="col-sm-3">
-						<i class="d-inline-block fa fa-user fa-3x border-square"></i><span class="d-inline align-top">Seating left</span>
-					</div>
-				</div>
-				<div class="row d-flex text-center align-items-center" style="height:auto; font-size:12px; padding-top: 5px; color:#333">
-					<div class="col-sm-3">
-						<span class="d-inline align-top">Brooklyn Bridge Park</span>
-					</div>
-					<div class="col-sm-3">
-						<span class="d-inline align-top">Park 1, 2, 3</span>
-					</div>
-					<div class="col-sm-3">
-						<span class="d-inline-block align-top" style="padding-bottom: 10px;">Brooklyn Borough Hall, Brooklyn Bridge Park</span>
-					</div>
-					<div class="col-sm-3">
-						<span class="d-inline align-top"><span style="color:#f10f24; font-weight: bold;">1223</span> / 5000</span>
+					<div class="col-lg-3 col-md-6 d-block justify-content-center align-items-center ">
+						<div class="card w-100 h-100 mt-5">
+							<div class="card-block">
+								<p class="card-text row justify-content-center align-items-center"><i class="fa fa-user fa-3x border-square text-center"></i><span>Seats remaining</span></p>
+								<p class="text-center card-subtext"><span class="text-red">2005</span><span> / 5000</span></p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		
 		<!-- Festival pricing -->
-		<div class="container-fluid bg-gray6-c-white">
-			<div class="container d-flex justify-content-center align-items-center">
+		<div class="container-fluid bg-gray6-c-white" id="festival-pricing">
+			<div class="container d-flex justify-content-center align-items-center" style="height: 140px;">
 				<div class="align-middle">
-					<p style="padding: 25px;">As always addmission if free, but you <span style="color:#f10f24; font-weight: bold; font-size: 24px;text-shadow:2px 2px #333;">must</span> pre-register: <a href="#register"><button class="btn-register">Register</button></a></p>
+					<p style="padding-top: 85px">As always addmission if free, but you <span style="color:#f10f24; font-weight: bold; font-size: 24px;text-shadow:2px 2px #333;">must</span> pre-register!<br>
+						<a href="#register">
+						<p class="text-center" style="padding-bottom: 25px;"><button class="btn btn-film-register">Register</button></a></p>
 				</div>
 			</div>
 		</div>
 		
 		<!-- Festival partners -->
-		<div class="container-fluid bg-gray5-c-gray1">
+		<div class="container-fluid bg-gray5-c-gray1" id="festival-partners">
 			<div class="container">
 				<p class="row h-100 justify-content-center align-items-center" style="padding-bottom: 20px;">Festival partners</p>
 				<div class="row">
 					<div class="col-lg-6 d-flex justify-content-center align-items-center ">
 						<div class="card h-100" style="margin-bottom: 20px; background-color:white">
 							<div class="card-block">
-								<p class="card-text row justify-content-center  align-items-center" style="color:#333; font-weight: bold;  padding: 20px">Brooklyn Borough</p>
+								<p class="card-text row justify-content-center  align-items-center" style="color:#333; font-weight: bold;  padding: 20px">Press Releases</p>
 							</div>
-							<img class="card-img-top img-fluid" src="img/brooklyn-borough-1.png" alt="Card image cap" style="padding: 0 10px;">
+							<a href="http://www.brooklyn-usa.org/press-releases/"><img class="img-fluid" src="img/Seal_of_Brooklyn_NY.png"></a>
 						</div>
 					</div>
 					<div class="col-lg-6 d-flex justify-content-center align-items-center ">
 						<div class="card h-100" style="margin-bottom: 20px; background-color:white">
 							<div class="card-block">
-								<p class="card-text row justify-content-center  align-items-center" style="color:#333; font-weight: bold; padding: 15px">Brooklyn Borough</p>
+								<p class="card-text row justify-content-center  align-items-center" style="color:#333; font-weight: bold; padding: 15px">Brooklyn Bridge Park</p>
 							</div>
 							<img class="card-img-top img-fluid" src="img/bbp-logo.png" alt="Card image cap" style="padding: 0 10px;">
 						</div>
@@ -158,7 +183,8 @@
 				</div>
 			</div>
 		</div>
-
+		
+		<!-- Spacer -->
 		<div class="container-fluid bg-white-c-gray1">
 		</div>
 		
@@ -174,30 +200,33 @@
 			<div class="container-fluid bg-white-c-gray1">
 				<div class="container page-header">
 					<p class="row h-100 justify-content-center align-items-center">Register</p>
+					<form class="form-inline justify-content-center justify-content-around">
+						<label class="sr-only" for="inlineFormInputName2">Name</label>
+						<input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
+						<label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+						<div class="input-group mb-2 mr-sm-2">
+							<div class="input-group-prepend">
+								<div class="input-group-text">@</div>
+							</div>
+							<input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
+						</div>
+						<button type="submit" class="btn btn-primary mb-2">Submit</button>
+					</form>
 				</div>
 			</div>
 		</section>
 		
-		<!-- Festival summary -->
-		<div class="container-fluid bg-red-c-white">
-			<div class="container">
-				<p class="row h-100 justify-content-center align-items-center">Festival summary</p>
-			</div>
-		</div>
-		
-		<!-- Schedule -->
-		<section id="schedule">
-			<div class="container-fluid bg-white-c-gray1">
-				<div class="container">
-					<p class="row h-100 justify-content-center align-items-center">Schedule</p>
-				</div>
+		<!-- Festival schedule -->
+		<section id="schedule" class="bg-gray3-c-white">
+			<div class="container page-header" style="min-height: 200px;">
+				<p class="row h-100 justify-content-center align-items-center">Schedule</p>
 			</div>
 		</section>
 		
 		<!-- Trailers -->
 		<section id="trailers">
 			<div class="container-fluid bg-white-c-gray1">
-				<div class="container page-header">
+				<div class="container" style="min-height: 200px;">
 					<p class="row h-100 justify-content-center align-items-center">Trailers</p>
 				</div>
 			</div>
@@ -208,6 +237,38 @@
 			<div class="container-fluid bg-gray5-c-gray1">
 				<div class="container">
 					<p class="row h-100 justify-content-center align-items-center">Photo gallery</p>
+					<div id="pg-body">
+						<select class="form-control d-inline" style="width: auto; color: #212121; margin-bottom: 10px; border: 1px solid #333; border-radius: 0px;" id="boff-year">
+							<option selected>Select a year</option>
+							<option value="2017">2017</option>
+							<option value="2016">2016</option>
+							<option value="2015">2015</option>
+							<option value="2014">2014</option>
+						</select><span style="margin-left: 20px;">Select a year to view a gallery</span>
+						<div class="d-flex row">
+							<div class="col-md-6 d-block">
+								<img class="img-thumbnail" src="img/pg-img-0.jpeg" style="width:100px; height: 100px;" alt="img">
+								<img class="img-thumbnail" src="img/pg-img-1.jpeg" style="width:100px; height: 100px;" alt="img">
+								<img class="img-thumbnail" src="img/pg-img-2.jpeg" style="width:100px; height: 100px;" alt="img">
+								<img class="img-thumbnail" src="img/pg-img-3.jpeg" style="width:100px; height: 100px;" alt="img">
+								<img class="img-thumbnail" src="img/pg-img-4.jpeg" style="width:100px; height: 100px;" alt="img">
+								<img class="img-thumbnail" src="img/pg-img-5.jpeg" style="width:100px; height: 100px;" alt="img">
+								<img class="img-thumbnail" src="img/pg-img-6.jpeg" style="width:100px; height: 100px;" alt="img">
+								<img class="img-thumbnail" src="img/pg-img-7.jpeg" style="width:100px; height: 100px;" alt="img">
+								<img class="img-thumbnail" src="img/pg-img-8.jpeg" style="width:100px; height: 100px;" alt="img">
+								<img class="img-thumbnail" src="img/pg-img-9.jpeg" style="width:100px; height: 100px;" alt="img">
+								<img class="img-thumbnail" src="img/pg-img-10.jpeg" style="width:100px; height: 100px;" alt="img">
+								<img class="img-thumbnail" src="img/pg-img-11.jpeg" style="width:100px; height: 100px;" alt="img">
+								<img class="img-thumbnail" src="img/pg-img-12.jpeg" style="width:100px; height: 100px;" alt="img">
+								<img class="img-thumbnail" src="img/pg-img-13.jpeg" style="width:100px; height: 100px;" alt="img">
+								<img class="img-thumbnail" src="img/pg-img-14.jpeg" style="width:100px; height: 100px;" alt="img">
+								<img class="img-thumbnail" src="img/pg-img-15.jpeg" style="width:100px; height: 100px;" alt="img">
+							</div>
+							<div class="col-md-6 d-absolute" id="pg-carousel">
+								<img class="d-relative mt-1" style="border: 1px solid white; border-radius: .25rem; padding: .25rem; background-color: white; " src="img/pg-img-0.jpeg" style="width:450px; height: 250px;" alt="img">
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -215,7 +276,7 @@
 		<!-- News -->
 		<section id="news">
 			<div class="container-fluid bg-white-c-gray1">
-				<div class="container">
+				<div class="container" style="min-height: 200px;">
 					<p class="row h-100 justify-content-center align-items-center">News</p>
 				</div>
 			</div>
@@ -224,7 +285,7 @@
 		<!-- About -->
 		<section id="about">
 			<div class="container-fluid bg-white-c-red">
-				<div class="container">
+				<div class="container" style="min-height: 200px;">
 					<p class="row h-100 justify-content-center align-items-center">About</p>
 				</div>
 			</div>
@@ -269,14 +330,6 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 		<!-- Local JavaScript/jQuery -->
-		<script>
-		$(document).ready(function() {
-			$('.nav-link').click(function() {
-				var sectionTo = $(this).attr('href');
-				$('html, body').animate({
-					scrollTop: $(sectionTo).offset().top
-				}, 1500);});
-		});
-		</script>
+		<script src="js/javascript.js"></script>
 	</body>
 </html>
