@@ -3,29 +3,21 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,400,700|Open+Sans|Open+Sans+Condensed:300,700');
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
-@font-face { font-family: 'neosans';
-	src: url('../fonts/neosans/neosans.woff') format('woff'),
-		  url('../fonts/neosans/neosans.woff2') format ('woff2'),
-		  url('../fonts/neosans/neosans.otf') format ('opentype');
-} /* neosans */
-@font-face { font-family: 'stainy'; 
-	src: url('../fonts/stainy/stainy-personaluseonly.woff') format('woff'),
-		  url('../fonts/stainy/stainy-personaluseonly.woff2') format('woff2'),
-		  url('../fonts/stainy/stainy-personaluseonly.ttf') format('truetype');
-} /* stainy */
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:700');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 
-
-body { position: relative; padding-top: 50px; background-color: #212121;  margin-top: 0; }
+body { position: relative; padding-top: 50px; margin-top: -50px; background-color: #212121;  margin-top: 0; }
 p { margin: 0; }
+h2 { color: #333; }
 section { padding-top: 50px; margin-top: -50px; }
 .container-fluid { padding: 0; margin: 0; }
-.container { width: 70%; margin: auto; padding: 0; min-height: 20px; }
+.container { width: 70%; margin: auto; padding: 0; }
 
 /* Navbar styles */
 .navbar-collapse { background: #212121; }
 .nav.navbar { width: 70%;  padding: 1px; height: 50px; }
 .fa-map-marker { padding-left: 5px; }
-.logo-red { font-family: 'Raleway', cursive; font-size: 18px; color: #f10f24; font-weight: bold; padding-left:5px; padding-right: 3px;}
+.logo-red { font-family: 'Titillium Web', cursive; font-size: 18px; color: #f10f24; font-weight: bold; padding-left:5px; padding-right: 3px;}
 .logo-white { font-family: 'Raleway', sans-serif; font-size: 18px; color: white; font-weight: bold; }
 #navbar { background-color: #212121!important; }
 ul { font-family: 'Open Sans Condensed', sans-serif; }
@@ -36,7 +28,7 @@ a.navbar-brand { margin: 0 5px;}
 i.fa { display: block; }
 
 /* Carousel styles */
-.carousel { height: 350px; width: 100%; margin: 20px; margin-bottom: 80px; border: 2px solid white; }
+.carousel { height: auto; width: 100%; margin: 20px; margin-bottom: 80px; border: 2px solid white; }
 .carousel.item { height: auto; width: 100% }
 .carousel-inner { width: 100%; height: auto; }
 .carousel-caption { left: 45px; }
@@ -65,6 +57,7 @@ i.fa { display: block; }
 .font-red-bold-title { font-family: 'Roboto', sans-serif; font-weight: bold; color: #f10f24; font-size: 3.5vw; text-shadow: 2px 2px slategray}
 .font-white-title { font-family: 'Open Sans Condensed', sans-serif; color: white; font-weight: 100; font-size: 3.5vw; }
 .font-white-subtitle { font-family: 'Open Sans Condensed', sans-serif; color: white; font-weight: bold; font-size: 1.6vw; padding-top: 30px; }
+.carousel-img { opacity:0.25; width: 100%; height: 350px; }
 
 /* Festival banner */
 #festival-banner { height: auto; }
@@ -82,34 +75,55 @@ i.fa { display: block; }
 #festival-summary { margin: 0px 0px 0px 0px; padding: 0px, 0px, 0px, 0px; }
 
 /* Festival pricing */
-#festival-pricing { height: 150px}
+#festival-pricing { height: auto; }
 
-/* Festival schedule styles*/
-.nav-tabs { border-bottom: 1px solid #333; }
-#festival-schedule .nav-link { font-family: 'Roboto', sans-serif; padding: 5px; }
-#festival-schedule a { font-family: 'Open Sans', sans-serif; color: #aaa; }
-#fextival-schedule a:hover { background-color: red; color: white; }
-#festival-schedule a:focus { background-color: #f10f24; color: white!important; }
-#festival-schedule a:active { background-color: #f10f14; color: white; }
-.film-category { font-family: 'Roboto', sans-serif; font-size: 28px; padding-top: 20px; text-shadow: 2px 4px #e1e1e1; }
-.film-title { font-family: 'Roboto', sans-serif; font-size: 16px; padding-left: 20px; }
-.film-year { padding-left: 10px; }
-.film-cast { font-family: 'Robotos', sans-serif; font-style: italic; font-size: 12px; font-weight: bold; color: dimgray; display: inline-block; margin: 10px 0px; }
-.bad-tomato { 24px; width: 24px; margin-top: 0px}
-.bt-score { padding-left: 10px; font-family: "Roboto", sans-serif; margin-top: 5px; }
-.film-btn { margin-top: 10px; }
-.clock-and-sch { background-color: #f10f24; color: white; padding: 3px 6px; font-weight: bold; }
+/* Festival registration */
+.reg-p { margin-bottom: 0; }
+#reg-fullname, #reg-email { width: 200px; }
+#reg-sel-tickets { border-radius: 0px; padding-left: 3; margin: 0; width: auto; }
+.btn-danger { background-color: #f10f24; }
+.btn-dark, .btn-danger { border-radius: 0px; width: 100px; height: 38px; font-size: 1vw; }
+.reg-container { padding: 0; font-size: 1vw; }
+.reg-container-fluid { border: 1px solid #333; }
+.boxed { border: 1px solid #333; padding: 5px;}
+
+
+/* Festival schedule */
+.nav-tabs { font-family: 'Open Sans', sans-serif; }
+#schedule a.nav-link { border-radius: 0px;}
+#schedule a.nav-link.active.show { background-color: #f10f24; color: white;}
+#schedule a.nav-link { margin-right: 3px; padding: 5px; color: #909090 }
+#schedule a.nav-link:hover {background-color: #f10f24; color: white; }
+#schedule a.nav-link:active { background-color: #f10f24; color: white; }
+.nav-tabs .active { background-color: red; }
+.nav-tabs > li > a:focus {	color: limegreen; }
+.nav-tabs > li { border: red; }
+.nav-tabs > li > a { font-family: 'Raleway', sans-serif !important; border-radius: 0px; text-decoration: none; border: #212121; display: block; color: #212121; }
+.nav-tabs > li > a:link { font-family: 'Courier', sans-serif; color: #aaaaaa; }
+.nav-tabs > li > a:hover { background-color: #f10f24; color: white; }
+.nav-tabs > li > a:active { color: #f10f24 !imporant; }
+.nav-tabs > li > a:target { color: white; background-color: #f10f24 }
+.tab-content { width: auto; }
+.film-category { font-family: 'Titillium Web', sans-serif; font-size: 48px; text-shadow: 2px 4px #e1e1e1; color: #212121; }
+.film-title { font-family: 'Titillium Web', sans-serif; font-size: 24px; padding-left: 5px; color: #212121; }
+.film-year { padding-left: 5px; color: #333; font-family: 'Titillium Web', sans-serif; font-size:24px; }
+.film-cast { font-family: 'Open Sans', sans-serif; font-size: 14px; font-weight: bold; color: #909090; display: inline-block; }
+.bad-tomato { width: 80px; margin-top: 0px}
+.bt-score { font-family: "Titillium Web", sans-serif; margin-top: 5px; color: #333333; }
+.clock-and-sch { background-color: #f10f24; color: white; padding: 3px; font-weight: bold; }
+#worst { text-shadow: 3px 3px #f10f24; }
+.sch-text { font-family: 'Open Sans', sans-serif; color: #333; padding-right: 15px; text-align: justify; }
+
+/* Film trailer */
+#schedule iframe { position: relative; margin-top: 50px; width: 320px; height: 180px; float: right; }
+#schedule div.col-5 { padding: 0px; position: relative; bottom: 0px; left: 0px;}
 
 /* Button styles */
-.btn { display: inline; color: white; text-transform: uppercase; border: 1px solid #212121; border-radius: 0px; }
-.btn-film-trailer, .btn-film-website, .btn-film-register { margin-top: 15px; }
-.btn-film-trailer, .btn-film-website { background-color: #212121; color: white; }
-.btn-film-register { background-color: #f10f24; color: white; border: 1px solid #333; margin-bottom: 10px; }
+.btn { display: inline; color: white; text-transform: uppercase; border-radius: 0px; }
+.btn-film-register { background-color: #f10f24; color: white; margin-bottom: 0px; height: 3vw}
 
 /* Photo gallery */
-.hide-bullets { list-style:none; }
-.thumbnail { display: inline-flex; }
-.carousel-inner>.item>img, .carousel-inner>.item>a>img { width: 50%; }
+#pg-carousel-img { border: 1px solid white; border-radius: .25rem; padding: .25rem; background-color: white; width: 100%; height: auto;}
 
 /* Social icon styles */
 .fa-social { font-size: 48px;
@@ -139,7 +153,7 @@ a:hover { text-decoration: none; }
 .bg-white-c-gray4 { background-color: white; color: #909090; }
 .bg-white-c-gray6 { background-color: white; color: #777777; }
 .bg-white-c-red { background-color: white; color: #f10f24; }
-.bg-red-c-gray1 { background-color: #f10f24; color: #333; }
+.bg-red-c-gray1 { background-color: #f10f24; color: #333333; }
 .bg-red-c-white { background-color: #f10f24; color: white; }
 .text-red { color: #f10f24; font-weight: bold; }
 

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Font Awesome -->
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+		<link href="test.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<h2>Register Form</h2>
+		<div class="container-fluid reg-container-fluid">
+			<div class="container reg-container">
+				<div class="d-flex justify-content-around align-items-center">
+					<p class="reg-p">Name: <input type="text" name="fullname" id="reg-fullname" minlength="3" placehoder="full name" required></p>
+					<p class="reg-p">Email: <input type="email" name="email" id="reg-email" placeholder="username@mail-provider.com" required></p>
+					<p class="reg-p">Tickets: </p>
+					<select class="custom-select align-self-center" id="reg-sel-tickets">
+						<option selected>Select tickets</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+					<button type="button" class="btn btn-danger">REGISTER</button>
+					<button type="button" class="btn btn-dark">Reset</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Bootstrap 4 -->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		
+	</body>
+</html>
+		
