@@ -94,20 +94,23 @@ i.fa { display: block; }
 .film-category { font-family: 'Titillium Web', sans-serif; font-size: 48px; text-shadow: 2px 4px #e1e1e1; color: #212121; }
 .film-title { font-family: 'Titillium Web', sans-serif; font-size: 24px; padding-left: 5px; color: #212121; }
 .film-year { padding-left: 5px; color: #333; font-family: 'Titillium Web', sans-serif; font-size:24px; }
-.film-cast { font-family: 'Open Sans', sans-serif; font-style: italic; font-size: 13px; font-weight: bold; color: dimgray; display: inline-block; }
-.bad-tomato { width: 36px; margin-top: 0px}
-.bt-score { padding-left: 10px; font-family: "Titillium Web", sans-serif; margin-top: 5px; }
+.film-cast { font-family: 'Open Sans', sans-serif; font-style: italic; font-size: 14px; font-weight: bold; color: dimgray; display: inline-block; }
+.bad-tomato { width: 80px; margin-top: 0px}
+.bt-score { font-family: "Titillium Web", sans-serif; margin-top: 5px; color: #333333; }
 .clock-and-sch { background-color: #f10f24; color: white; padding: 3px; font-weight: bold; }
+#worst { text-shadow: 3px 3px #f10f24; }
+.sch-text { font-family: 'Open Sans', sans-serif; color: #333; }
 
 /* Film trailer */
-#schedule iframe { width: 130%; margin-left: -25px; margin-top: -5px; }
-#schedule div.col-5 { padding: 0px; }
+#schedule iframe { position: relative; margin-top: 50px; width: 320px; height: 180px; float: right; }
+#schedule div.col-5 { padding: 0px; position: relative; bottom: 0px; left: 0px;}
 
 /* Button styles */
 .btn { display: inline; color: white; text-transform: uppercase; border-radius: 0px; }
 .btn-film-register { background-color: #f10f24; color: white; margin-bottom: 0px; height: 3vw}
 
 /* Photo gallery */
+#pg-carousel-img { border: 1px solid white; border-radius: .25rem; padding: .25rem; background-color: white; width: 100%; height: auto;}
 
 /* Social icon styles */
 .fa-social { font-size: 48px;
