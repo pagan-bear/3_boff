@@ -47,7 +47,8 @@
 		</header>
 		
 		<!-- Banner carousel -->
-		<section id="home" class="container-fluid bg-gray1-c-white">
+		<section id="home">
+			<div class="container-fluid bg-gray1-c-white">
 				<div class="container d-flex justify-content-center align-items-center">
 					<div id="b-carousel" class="carousel slide mx-auto" data-ride="carousel">
 						<ol class="carousel-indicators">
@@ -57,7 +58,7 @@
 						</ol>
 						<div class="carousel-inner">
 							<div class="carousel-item active">
-								<img src="img/outdoor-film-1.jpg" style="opacity:0.25; width: 100%; height: 350px;" class="img-fluid">
+								<img src="img/outdoor-film-1.jpg" class="img-fluid carousel-img">
 								<div class="carousel-caption d-none d-sm-block justify-content-center text-left w-90">
 									<p><span class="font-red-sm-title">NEW</span><span class="font-white-sm-title">&nbsp;&ndash; AUGUST 2018</span></p><br>
 									<p><span class="font-red-bold-title"><b>Brooklyn Outdoor </b></span><span class="font-white-title"><b>Film Festival</b></span></p>
@@ -66,7 +67,7 @@
 								</div>
 							</div>
 							<div class="carousel-item">
-								<img src="img/outdoor-film-2.jpg" style="opacity:0.25; width: 100%; height: 350px;" class="img-fluid">
+								<img src="img/outdoor-film-2.jpg" class="img-fluid carousel-img">
 								<div class="carousel-caption d-none d-sm-block justify-content-center text-left w-90">
 									<p><span class="font-red-sm-title">NEW</span><span class="font-white-sm-title">&nbsp;&ndash; AUGUST 2018</span></p><br>
 									<p><span class="font-red-bold-title"><b>Brooklyn Outdoor </b></span><span class="font-white-title"><b>Film Festival</b></span><br></p>
@@ -75,7 +76,7 @@
 								</div>
 							</div>
 							<div class="carousel-item">
-								<img src="img/outdoor-film-3.jpg" style="opacity:0.25; width: 100%; height: 350px;" class="img-fluid">
+								<img src="img/outdoor-film-3.jpg" class="img-fluid carousel-img">
 								<div class="carousel-caption d-none d-sm-block justify-content-center text-left w-90">
 									<p><span><span class="font-red-sm-title">NEW</span><span class="font-white-sm-title">&nbsp;&ndash; AUGUST 2018</span></span></p><br>
 									<p><span class="font-red-bold-title"><b>Brooklyn Outdoor </b></span><span class="font-white-title"><b>Film Festival</b></span><br></p>
@@ -86,6 +87,7 @@
 						</div>
 					</div>
 				</div>
+			</div>
 		</section>
 		
 		<!-- Festival banner -->
@@ -168,7 +170,7 @@
 							<div class="card-block">
 								<p class="card-text row justify-content-center  align-items-center" style="color:#333; font-weight: bold;  padding: 20px">Press Releases</p>
 							</div>
-							<a href="http://www.brooklyn-usa.org/press-releases/"><img class="img-fluid" src="img/Seal_of_Brooklyn_NY.png"></a>
+							<a href="http://www.brooklyn-usa.org/press-releases/" target="_blank"><img class="img-fluid" src="img/Seal_of_Brooklyn_NY.png"></a>
 						</div>
 					</div>
 					<div class="col-lg-6 d-flex justify-content-center align-items-center ">
@@ -197,7 +199,26 @@
 		<section id="register">
 			<div class="container-fluid bg-white-c-gray1">
 				<div class="container bg-white-c-gray1">
-					<h2>Register</h2>
+					<h2>Registration Form</h2>
+						<div class="reg-container-fluid">
+							<div class="reg-container">
+								<div class="d-flex justify-content-around align-items-center">
+									<p class="reg-p">Name: <input type="text" name="fullname" id="reg-fullname" minlength="3" placehoder="full name" required></p>
+									<p class="reg-p">Email: <input type="email" name="email" id="reg-email" placeholder="username@mail-provider.com" required></p>
+									<p class="reg-p">Tickets: </p>
+									<select class="custom-select align-self-center" id="reg-sel-tickets">
+										<option selected>Select tickets</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+									</select>
+									<button type="button" class="btn btn-danger">REGISTER</button>
+									<button type="button" class="btn btn-dark">Reset</button>
+								</div>
+							</div>
+						</div>
 				</div>
 			</div>
 		</section>
@@ -228,7 +249,7 @@
 												<span class="film-title">Jason X</span>
 												<span class="film-year">(2002)</span><br>
 												<span class="film-cast my-3">Kane Hodder, Lexa Doig, Lisa Ryder</span><br>
-												<span class="sch-text">Set way in the future, Earth is no longer inhabitable, so humans have colonized in outer space. One colony receives two cryogenically frozen bodies, and when they defrost them, one of the bodies turns out to be.....who else? Jason Voorhees. No longer in the forest or Camp Crystal Lake, Jason stalks the colonists in a whole new environment..</span><br><br>
+												<p class="sch-text">Set way in the future, Earth is no longer inhabitable, so humans have colonized in outer space. One colony receives two cryogenically frozen bodies, and when they defrost them, one of the bodies turns out to be.....who else? Jason Voorhees. No longer in the forest or Camp Crystal Lake, Jason stalks the colonists in a whole new environment..</p><br><br>
 
 												<div class="df">
 														<img class="d-inline-flex bad-tomato" src="img/rotten-tomatoes.jpeg">
@@ -251,7 +272,7 @@
 												<span class="film-title">Jason Goes to Hell: The Final Friday</span>
 												<span class="film-year">(1993)</span><br>
 												<span class="film-cast my-3">Jon D. LeMay, Kari Keegan</span><br>
-												<span class="sch-text">After being blown away by a team of FBI agents, Jason Voorhees (Kane Hodder) needs to find a way to overcome certain death. When his bloodied remains are sent to the morgue, his heart, still intact, is able to hypnotize a coroner and take over his body. After brutally dispatching a couple of FBI agents, he heads back to his favorite stomping grounds: Crystal Lake. Jason commences another teen massacre while a bounty hunter (Steven Williams) discovers the only way to kill him.</span><br><br>
+												<p class="sch-text">After being blown away by a team of FBI agents, Jason Voorhees (Kane Hodder) needs to find a way to overcome certain death. When his bloodied remains are sent to the morgue, his heart, still intact, is able to hypnotize a coroner and take over his body. After brutally dispatching a couple of FBI agents, he heads back to his favorite stomping grounds: Crystal Lake. Jason commences another teen massacre while a bounty hunter (Steven Williams) discovers the only way to kill him.</p><br><br>
 
 												<div class="df">
 														<img class="d-inline-flex bad-tomato" src="img/rotten-tomatoes.jpeg">
@@ -275,7 +296,7 @@
 												<span class="film-title">Freddy vs. Jason</span>
 												<span class="film-year">(2003)</span><br>
 												<span class="film-cast my-3">Robert Englund, Ken Kirzinger, Monica Keena</span><br>
-												<span class="sch-text">Two horror icons face off in this supernatural movie. Disfigured serial killer Freddy Krueger (Robert Englund), who attacks his victims in their dreams, has lost much of his power since citizens of his town have become less afraid of him. Enlisting the help of fellow violent murderer Jason Voorhees (Ken Kirzinger), Freddy orchestrates a new killing spree. However, when the hockey-mask-wearing psychopath won't stop chopping up Freddy's intended victims, the two ghouls start to battle each other.</span><br><br>
+												<p class="sch-text">Two horror icons face off in this supernatural movie. Disfigured serial killer Freddy Krueger (Robert Englund), who attacks his victims in their dreams, has lost much of his power since citizens of his town have become less afraid of him. Enlisting the help of fellow violent murderer Jason Voorhees (Ken Kirzinger), Freddy orchestrates a new killing spree. However, when the hockey-mask-wearing psychopath won't stop chopping up Freddy's intended victims, the two ghouls start to battle each other.</p><br><br>
 
 												<div class="df">
 														<img class="d-inline-flex bad-tomato" src="img/rotten-tomatoes.jpeg">
@@ -307,7 +328,7 @@
 												<span class="film-title">Casablanca</span>
 												<span class="film-year">(1942)</span><br>
 												<span class="film-cast my-3">Humphrey Bogart, Ingrid Bergman, Claude Rains</span><br>
-												<span class="sch-text">Rick Blaine (Humphrey Bogart), who owns a nightclub in Casablanca, discovers his old flame Ilsa (Ingrid Bergman) is in town with her husband, Victor Laszlo (Paul Henreid). Laszlo is a famed rebel, and with Germans on his tail, Ilsa knows Rick can help them get out of the country.</span><br><br>
+												<p class="sch-text">Rick Blaine (Humphrey Bogart), who owns a nightclub in Casablanca, discovers his old flame Ilsa (Ingrid Bergman) is in town with her husband, Victor Laszlo (Paul Henreid). Laszlo is a famed rebel, and with Germans on his tail, Ilsa knows Rick can help them get out of the country.</p><br><br>
 												
 												<div class="df">
 														<img class="d-inline-flex bad-tomato" src="img/rotten-tomatoes.jpeg">
@@ -330,7 +351,7 @@
 												<span class="film-title">What Ever Happened to Baby Jane?</span>
 												<span class="film-year">(1962)</span><br>
 												<span class="film-cast my-3">Bette Davis, Joan Crawford, Victor Bruno</span><br>
-												<span class="sch-text">In a tale that almost redefines sibling rivalry, faded actresses Blanche and 'Baby' Jane Hudson live together. Jane was by far the most famous when she performed with their father in vaudeville but as they got older, it was Blanche who became the finer actress, which Jane still resents. Blanche is now confined to a wheelchair and Jane is firmly in control. As time goes by, Jane exercises greater and greater control over her sister, intercepting her letters and ensuring that few if anyone from the outside has any contact with her. As Jane slowly loses her mind, she torments her sister going to ever greater extremes.</span><br><br>
+												<p class="sch-text">In a tale that almost redefines sibling rivalry, faded actresses Blanche and 'Baby' Jane Hudson live together. Jane was by far the most famous when she performed with their father in vaudeville but as they got older, it was Blanche who became the finer actress, which Jane still resents. Blanche is now confined to a wheelchair and Jane is firmly in control. As time goes by, Jane exercises greater and greater control over her sister, intercepting her letters and ensuring that few if anyone from the outside has any contact with her. As Jane slowly loses her mind, she torments her sister going to ever greater extremes.</p><br><br>
 
 												<div class="df">
 														<img class="d-inline-flex bad-tomato" src="img/rotten-tomatoes.jpeg">
@@ -354,7 +375,7 @@
 												<span class="film-title">Metropolis</span>
 												<span class="film-year">(1927)</span><br>
 												<span class="film-cast my-3">Alfred Abel, Gustav Frolich, Brigitte Helm</span><br>
-												<span class="sch-text">In the future, the society of Metropolis is divided in two social classes: the workers, who live in the underground below the machines level, and the dominant classes that lives in the surface. The workers are controlled by their leader Maria, who wants to find a mediator between the upper class lords and the workers, since she believes that a heart would be necessary between brains and muscles. Maria meets Freder Fredersen, the son of the Lord of Metropolis Johhan Fredersen, in a meeting of the workers, and they fall in love for each other. Meanwhile, Johhan decides that the workers are no longer necessary for Metropolis, and uses a robot pretending to be Maria to promote a revolution of the working class and eliminate them.</span><br><br>
+												<p class="sch-text">In the future, the society of Metropolis is divided in two social classes: the workers, who live in the underground below the machines level, and the dominant classes that lives in the surface. The workers are controlled by their leader Maria, who wants to find a mediator between the upper class lords and the workers, since she believes that a heart would be necessary between brains and muscles. Maria meets Freder Fredersen, the son of the Lord of Metropolis Johhan Fredersen, in a meeting of the workers, and they fall in love for each other. Meanwhile, Johhan decides that the workers are no longer necessary for Metropolis, and uses a robot pretending to be Maria to promote a revolution of the working class and eliminate them.</p><br><br>
 												
 												<div class="df">
 														<img class="d-inline-flex bad-tomato" src="img/rotten-tomatoes.jpeg">
@@ -388,7 +409,7 @@
 												<span class="film-title">The War of the Worlds</span>
 												<span class="film-year">(1953)</span><br>
 												<span class="film-cast my-3">Lewis Martin, Robert Cornthwaite, Sandro Giglio</span><br>
-												<span class="sch-text">Earth is under attack in the chilling Cold War classic "The War of the Worlds". In one of the greatest science fiction films of all time, invaders from another world target a small California town with autonomous probes and laser disintegration rays. A terrifying vision of an America under siege based on the novel by H.G. Wells starring Gene Barry, Ann Robinson and Les Tremayne and featuring Academy Award-winning special effects. This special Collector's Edition includes a making-of documentary, Orson Welles' original Mercury Theatre Radio Broadcast of "The War of the Worlds" and more.</span><br><br>
+												<p class="sch-text">Earth is under attack in the chilling Cold War classic "The War of the Worlds". In one of the greatest science fiction films of all time, invaders from another world target a small California town with autonomous probes and laser disintegration rays. A terrifying vision of an America under siege based on the novel by H.G. Wells starring Gene Barry, Ann Robinson and Les Tremayne and featuring Academy Award-winning special effects. This special Collector's Edition includes a making-of documentary, Orson Welles' original Mercury Theatre Radio Broadcast of "The War of the Worlds" and more.</p><br><br>
 												
 												<div class="df">
 														<img class="d-inline-flex bad-tomato" src="img/rotten-tomatoes.jpeg">
@@ -411,7 +432,7 @@
 												<span class="film-title">Killer Klowns from Outer Space</span>
 												<span class="film-year">(1988)</span><br>
 												<span class="film-cast my-3">Grant Cramer, Suzanne Snyder, John Allen Nelson</span><br>
-												<span class="sch-text">This low-budget cult classic horror spoof has one of the great movie titles of all time. Mike (Grant Cramer) and his sweetheart, Debbie (Suzanne Snyder), are smooching on lover's lane when they see what appears to be a meteorite crashing over the horizon. They loosen their liplock long enough to investigate and find a curious circus tent. There they discover malevolent clowns who stop their victims with popcorn-shooting guns and acid-drenched pies in order to feast on human blood. The unfortunates are then entombed into inescapable cotton-candy cocoons. Officer Dave Hanson (John Allen Nelson) is called to investigate with help from Officer Mooney (John Vernon). For those viewers who already think clowns are a little creepy to begin with, this one will push them over the edge.</span><br><br>
+												<p class="sch-text">This low-budget cult classic horror spoof has one of the great movie titles of all time. Mike (Grant Cramer) and his sweetheart, Debbie (Suzanne Snyder), are smooching on lover's lane when they see what appears to be a meteorite crashing over the horizon. They loosen their liplock long enough to investigate and find a curious circus tent. There they discover malevolent clowns who stop their victims with popcorn-shooting guns and acid-drenched pies in order to feast on human blood. The unfortunates are then entombed into inescapable cotton-candy cocoons. Officer Dave Hanson (John Allen Nelson) is called to investigate with help from Officer Mooney (John Vernon). For those viewers who already think clowns are a little creepy to begin with, this one will push them over the edge.</p><br><br>
 
 												<div class="df">
 														<img class="d-inline-flex bad-tomato" src="img/rotten-tomatoes.jpeg">
@@ -435,7 +456,7 @@
 												<span class="film-title">Prince of Darkness</span>
 												<span class="film-year">(1987)</span><br>
 												<span class="film-cast my-3">Donald Pleasance, Jameson Parker, Victor Wong</span><br>
-												<span class="sch-text">Donald Pleasence stars as Father Loomis, a Catholic priest charged with investigating a book, key and other cryptic clues left behind by a fellow priest who passed away. In the basement of a decaying Los Angles church, Loomis finds a cylinder that seems to be holding a green energy force inside. A physics professor, Edward Birack (Victor Wong), is intrigued by Loomis' discovery and brings a team of grad students to the church for a weekend study and analysis session. They learn that the energy is the son of Satan, preparing to unlock himself and bring his evil father back from an other-dimensional prison.</span><br><br>
+												<p class="sch-text">Donald Pleasence stars as Father Loomis, a Catholic priest charged with investigating a book, key and other cryptic clues left behind by a fellow priest who passed away. In the basement of a decaying Los Angles church, Loomis finds a cylinder that seems to be holding a green energy force inside. A physics professor, Edward Birack (Victor Wong), is intrigued by Loomis' discovery and brings a team of grad students to the church for a weekend study and analysis session. They learn that the energy is the son of Satan, preparing to unlock himself and bring his evil father back from an other-dimensional prison.</p><br><br>
 												
 												<div class="df">
 														<img class="d-inline-flex bad-tomato" src="img/rotten-tomatoes.jpeg">
@@ -470,7 +491,7 @@
 												<span class="film-title">Saving Christmas</span>
 												<span class="film-year">(2014)</span><br>
 												<span class="film-cast my-3">Kirk Cameron, Darren Doane, Bridgette Ridenour</span><br>
-												<span class="sch-text">Kirk is enjoying the annual Christmas party extravaganza thrown by his sister until he realizes he needs to help out Christian, his brother-in-law, who has a bad case of the bah-humbugs. Kirk's fresh look at Christmas provides Christian's the chance to see Christ is where He has always been: at the center of our Christmas celebrations and traditions. Can Kirk save his in-laws opinions on Christmas or will he have to celebrate a holiday like this without him?</span><br><br>
+												<p class="sch-text">Kirk is enjoying the annual Christmas party extravaganza thrown by his sister until he realizes he needs to help out Christian, his brother-in-law, who has a bad case of the bah-humbugs. Kirk's fresh look at Christmas provides Christian's the chance to see Christ is where He has always been: at the center of our Christmas celebrations and traditions. Can Kirk save his in-laws opinions on Christmas or will he have to celebrate a holiday like this without him?</p><br><br>
 												
 												<div class="df">
 														<img class="d-inline-flex bad-tomato" src="img/rotten-tomatoes.jpeg">
@@ -493,7 +514,7 @@
 												<span class="film-title">It's Pat: The Movie</span>
 												<span class="film-year">(1994)</span><br>
 												<span class="film-cast my-3">Julia Sweene, Dave Foley, Charles Rocket</span><br>
-												<span class="sch-text">Who and what is Pat? That is what everyone in this little comedy is trying to find out. "Pat," the little androgynous character created by comedian Julia Sweeney, first appeared in a series of sketches on the TV show "Saturday Night Live." Like the early sketches, the film focuses on people's attempts to determine Pat's true gender.</span><br><br>
+												<p class="sch-text">Who and what is Pat? That is what everyone in this little comedy is trying to find out. "Pat," the little androgynous character created by comedian Julia Sweeney, first appeared in a series of sketches on the TV show "Saturday Night Live." Like the early sketches, the film focuses on people's attempts to determine Pat's true gender.</p><br><br>
 
 												<div class="df">
 														<img class="d-inline-flex bad-tomato" src="img/rotten-tomatoes.jpeg">
@@ -517,7 +538,7 @@
 												<span class="film-title">Jaws: The Revenge</span>
 												<span class="film-year">(1987)</span><br>
 												<span class="film-cast my-3">Lorraine Gary, Michael Caine, Lance Guest</span><br>
-												<span class="sch-text">The family of widow Ellen Brody (Lorraine Gary) has long been plagued by shark attacks, and this unfortunate association continues when her son is the victim of a massive great white. In mourning, Ellen goes to visit her other son, Michael (Lance Guest), in the Bahamas, where she meets the charming Hoagie Newcombe (Michael Caine). As Ellen and Hoagie begin a relationship, a huge shark appears off the coast of the island, and Ellen's trouble with the great whites begins again.</span><br><br>
+												<p class="sch-text">The family of widow Ellen Brody (Lorraine Gary) has long been plagued by shark attacks, and this unfortunate association continues when her son is the victim of a massive great white. In mourning, Ellen goes to visit her other son, Michael (Lance Guest), in the Bahamas, where she meets the charming Hoagie Newcombe (Michael Caine). As Ellen and Hoagie begin a relationship, a huge shark appears off the coast of the island, and Ellen's trouble with the great whites begins again.</p><br><br>
 												
 												<div class="df">
 														<img class="d-inline-flex bad-tomato" src="img/rotten-tomatoes.jpeg">
@@ -576,8 +597,8 @@
 		
 		<!-- News -->
 		<section id="news">
-			<div class="container-fluid bg-white-c-gray1">
-				<div class="container" style="min-height: 200px;">
+			<div class="container-fluid">
+				<div class="container">
 					<h2 class="row h-100">News</h2>
 				</div>
 			</div>

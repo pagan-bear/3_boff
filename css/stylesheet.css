@@ -6,11 +6,12 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:700');
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 
-body { position: relative; padding-top: 50px; background-color: #212121;  margin-top: 0; }
+body { position: relative; padding-top: 50px; margin-top: -50px; background-color: #212121;  margin-top: 0; }
 p { margin: 0; }
+h2 { color: #333; }
 section { padding-top: 50px; margin-top: -50px; }
 .container-fluid { padding: 0; margin: 0; }
-.container { width: 70%; margin: auto; padding: 0; min-height: 30px; }
+.container { width: 70%; margin: auto; padding: 0; }
 
 /* Navbar styles */
 .navbar-collapse { background: #212121; }
@@ -27,7 +28,7 @@ a.navbar-brand { margin: 0 5px;}
 i.fa { display: block; }
 
 /* Carousel styles */
-.carousel { height: 350px; width: 100%; margin: 20px; margin-bottom: 80px; border: 2px solid white; }
+.carousel { height: auto; width: 100%; margin: 20px; margin-bottom: 80px; border: 2px solid white; }
 .carousel.item { height: auto; width: 100% }
 .carousel-inner { width: 100%; height: auto; }
 .carousel-caption { left: 45px; }
@@ -56,6 +57,7 @@ i.fa { display: block; }
 .font-red-bold-title { font-family: 'Roboto', sans-serif; font-weight: bold; color: #f10f24; font-size: 3.5vw; text-shadow: 2px 2px slategray}
 .font-white-title { font-family: 'Open Sans Condensed', sans-serif; color: white; font-weight: 100; font-size: 3.5vw; }
 .font-white-subtitle { font-family: 'Open Sans Condensed', sans-serif; color: white; font-weight: bold; font-size: 1.6vw; padding-top: 30px; }
+.carousel-img { opacity:0.25; width: 100%; height: 350px; }
 
 /* Festival banner */
 #festival-banner { height: auto; }
@@ -73,7 +75,18 @@ i.fa { display: block; }
 #festival-summary { margin: 0px 0px 0px 0px; padding: 0px, 0px, 0px, 0px; }
 
 /* Festival pricing */
-#festival-pricing { height: 150px }
+#festival-pricing { height: auto; }
+
+/* Festival registration */
+.reg-p { margin-bottom: 0; }
+#reg-fullname, #reg-email { width: 200px; }
+#reg-sel-tickets { border-radius: 0px; padding-left: 3; margin: 0; width: auto; }
+.btn-danger { background-color: #f10f24; }
+.btn-dark, .btn-danger { border-radius: 0px; width: 100px; height: 38px; font-size: 1vw; }
+.reg-container { padding: 0; font-size: 1vw; }
+.reg-container-fluid { border: 1px solid #333; }
+.boxed { border: 1px solid #333; padding: 5px;}
+
 
 /* Festival schedule */
 .nav-tabs { font-family: 'Open Sans', sans-serif; }
@@ -94,12 +107,12 @@ i.fa { display: block; }
 .film-category { font-family: 'Titillium Web', sans-serif; font-size: 48px; text-shadow: 2px 4px #e1e1e1; color: #212121; }
 .film-title { font-family: 'Titillium Web', sans-serif; font-size: 24px; padding-left: 5px; color: #212121; }
 .film-year { padding-left: 5px; color: #333; font-family: 'Titillium Web', sans-serif; font-size:24px; }
-.film-cast { font-family: 'Open Sans', sans-serif; font-style: italic; font-size: 14px; font-weight: bold; color: dimgray; display: inline-block; }
+.film-cast { font-family: 'Open Sans', sans-serif; font-size: 14px; font-weight: bold; color: #909090; display: inline-block; }
 .bad-tomato { width: 80px; margin-top: 0px}
 .bt-score { font-family: "Titillium Web", sans-serif; margin-top: 5px; color: #333333; }
 .clock-and-sch { background-color: #f10f24; color: white; padding: 3px; font-weight: bold; }
 #worst { text-shadow: 3px 3px #f10f24; }
-.sch-text { font-family: 'Open Sans', sans-serif; color: #333; }
+.sch-text { font-family: 'Open Sans', sans-serif; color: #333; padding-right: 15px; text-align: justify; }
 
 /* Film trailer */
 #schedule iframe { position: relative; margin-top: 50px; width: 320px; height: 180px; float: right; }
