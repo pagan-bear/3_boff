@@ -36,6 +36,18 @@
 							<li class="nav-item"><a class="nav-link" href="#gallery"><i class="fa fa-camera"></i> Gallery</a></li>
 							<li class="nav-item"><a class="nav-link" href="#news"><i class="fa fa-rss"></i> News</a></li>
 							<li class="nav-item"><a class="nav-link" href="#about"><i class="fa fa-info-circle"></i> About</a></li>
+							
+							<div class="btn-group">
+								<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-handshake-o"></i> Social</a></li>
+								<button type="button"  id="btn-ddn" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+									<span class="sr-only">Toggle Dropdown</span>
+								</button>
+								<div class="dropdown-menu dropdown-menu-right bg-dark" id="ddm-social">
+									<a class="dropdown-item text-white" href="https://twitter.com" target="_blank"><i class="fa fa-twitter d-inline"></i><span class="ddm-text">&nbsp;Twitter</span></a>
+									<a class="dropdown-item text-white" href="https://instagram.com" target="_blank"><i class="fa fa-instagram d-inline"></i><span class="ddm-text">&nbsp;Instagram</span></a>
+									<a class="dropdown-item text-white" href="https://facebook.com" target="_blank"><i class="fa fa-facebook d-inline"></i><span class="ddm-text">&nbsp;Facebook</span></a>
+								</div>
+							</div>							
 						</ul>
 					</div>
 				</nav>
@@ -148,9 +160,10 @@
 		<!-- Festival pricing -->
 		<div class="container-fluid bg-gray6-c-white" id="festival-pricing">
 			<div class="container d-flex justify-content-center align-items-center" style="height: 140px;">
-				<div class="align-middle">
-					<p style="padding-top: 85px">As always addmission if free, but you <span style="color:#f10f24; font-weight: bold; font-size: 24px;text-shadow:2px 2px #909090;">must</span> pre-register!<br>
-						<a href="#register" style="padding-bottom: 25px;"><button class="btn btn-film-register">Register</button></a>
+				<div class="d-flex">
+					<p style="padding-top: 85px">As always addmission if free, but you 
+						<span style="color:#f10f24; font-weight: bold; font-size: 24px;text-shadow:2px 2px #909090;">must</span> pre-register!
+						<a href="#register"><button class="btn btn-film-register d-inline">Register</button></a>
 				</div>
 			</div>
 		</div>
@@ -185,28 +198,57 @@
 		
 		<!-- Festival register -->
 		<section id="register">
-			<div class="container-fluid bg-white-c-gray1">
-				<div class="container bg-white-c-gray1">
-					<h2>Registration Form</h2>
-						<div class="reg-container-fluid">
-							<div class="reg-container">
-								<div class="d-flex justify-content-around align-items-center">
-									<p class="reg-p">Name: <input type="text" name="fullname" id="reg-fullname" minlength="3" placehoder="full name" required></p>
-									<p class="reg-p">Email: <input type="email" name="email" id="reg-email" placeholder="username@mail-provider.com" required></p>
-									<p class="reg-p">Tickets: </p>
-									<select class="custom-select align-self-center" id="reg-sel-tickets">
-										<option selected>Select tickets</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-										<option value="5">5</option>
-									</select>
-									<button type="button" class="btn btn-danger">REGISTER</button>
-									<button type="button" class="btn btn-dark">Reset</button>
-								</div>
-							</div>
+			<div class="container-fluid bg-gray1-c-white">
+				<div class="container bg-gray1-c-white">
+				<h4>Registration Form</h4>
+				<div class="form-row">
+					<div class="form-group col-lg-6 form-inline">
+						 <label for="reg-fullname" class="col-form-label text-white w-25" id="reg-lbl-fullname">Full name:&nbsp;</label>
+						 <input type="text" class="form-control w-75" id="reg-fullname" placeholder="Full name">
+					 </div> <!-- full username -->
+					<div class="form-group col-lg-6 form-inline">
+						 <label for="reg-email" class="col-form-label text-white w-25" id="reg-lbl-email">Email:&nbsp;</label>
+						 <input type="email" class="form-control w-75" id="reg-email" placeholder="user.name@email-domain.com">
+					 </div>	<!-- email address -->
+				</div>		<!-- form row 1-->
+				<div class="form-row">
+					<div class="form-group col-lg-6 form-inline">	<!-- date checkboxes -->
+						<label for="reg-dates" class="col-form-label text-white w-25">Dates:&nbsp;</label>
+						<div class="form-inline w-75 justify-content-between">
+							<div class = "form-group">
+								<input type="checkbox" class="form-control" id="reg-chk-aug5">
+								<label for="reg-chck-aug5" class="Col-form-label text-white reg-chk-label">&nbsp;Aug 5<sup>th</sup></label>
+							</div>	<!-- checkbox 1 -->
+							<div class = "form-group">
+								<input type="checkbox" class="form-control" id="reg-chk-aug6">
+								<label for="reg-chck-aug6" class="Col-form-label text-white reg-chk-label">&nbsp;Aug 6<sup>th</sup></label>
+							</div>	<!-- checkbox 2 -->
+							<div class = "form-group">
+								<input type="checkbox" class="form-control" id="reg-chk-aug7">
+								<label for="reg-chck-aug7" class="Col-form-label text-white reg-chk-label">&nbsp;Aug 7<sup>th</sup></label>
+							</div>	<!-- checkbox 3 -->
+							<div class = "form-group">
+								<input type="checkbox" class="form-control" id="reg-chk-aug8">
+								<label for="reg-chck-aug8" class="Col-form-label text-white reg-chk-label">&nbsp;Aug 8<sup>th</sup></label>
+							</div>	<!-- checkbox 4-->
 						</div>
+					</div>
+					
+					<div class="form-group col-lg-6 form-inline">
+						<label class="text-white w-25">Tickets:&nbsp;</label>
+						<div class="d-flex justify-content-between w-75">
+							<div class="form-group">
+								<select class="form-control" id="sel-num-tickets">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+								</select>
+							</div>
+							<button class="btn btn-film-register ml-auto">Register</button>
+						</div>
+					</div>
+				</div>
 				</div>
 			</div>
 		</section>
@@ -216,12 +258,12 @@
 			<div class="container page-header" style="min-height: 200px;">
 				<div class="row">
 					<div class="col-md-12">
-						<h2>Schedule</h2>
+						<h4>Schedule</h4>
 						<ul id="tabs-justified" class="nav nav-tabs">
-							<li class="nav-item"><a href="" data-target="#aug5" data-toggle="tab" class="nav-link small text-uppercase active">Aug 5<sup>th</sup></a></li>
-							<li class="nav-item"><a href="" data-target="#aug6" data-toggle="tab" class="nav-link small text-uppercase ">Aug 6<sup>th</sup></a></li>
-							<li class="nav-item"><a href="" data-target="#aug7" data-toggle="tab" class="nav-link small text-uppercase">Aug 7<sup>th</sup></a></li>
-							<li class="nav-item"><a href="" data-target="#aug8" data-toggle="tab" class="nav-link small text-uppercase">Aug 8<sup>th</sup></a></li>
+							<li class="nav-item"><a href="#" data-target="#aug5" data-toggle="tab" class="nav-link small text-uppercase active">Aug 5<sup>th</sup></a></li>
+							<li class="nav-item"><a href="#" data-target="#aug6" data-toggle="tab" class="nav-link small text-uppercase ">Aug 6<sup>th</sup></a></li>
+							<li class="nav-item"><a href="#" data-target="#aug7" data-toggle="tab" class="nav-link small text-uppercase">Aug 7<sup>th</sup></a></li>
+							<li class="nav-item"><a href="#" data-target="#aug8" data-toggle="tab" class="nav-link small text-uppercase">Aug 8<sup>th</sup></a></li>
 						</ul><br>
 						
 						<div id="tabs-justfied-content" class="tab-content">
@@ -231,7 +273,7 @@
 								<span class="film-category">Jason Night!</span><hr>	
 										
 							<!-- August 5 -->
-										<div class="d-flex scroll-content clearfix">
+										<div class="d-flex scroll-content">
 											<div class="film-details">
 												<span class="clock-and-sch"><i class="fa fa-clock-o d-inline-block" aria-hidden="true"></i> 18:00</span>
 												<span class="film-title">Jason X</span>
@@ -243,7 +285,7 @@
 													<img class="d-inline-flex bad-tomato" src="img/rotten-tomatoes.jpeg">
 													<span class="bt-score mr-3">19%&nbsp;</span>
 													<img class="d-inline-flex mr-5" src="img/r18plus-rating.jpeg" style="width:25%;">
-													<a href="#register" class="btn btn-film-register align-left d-inline-flex">Register</a>	
+													<a href="#register"><button class="btn btn-film-register d-inline">Register</button></a>
 												</div>
 											</div>		<!-- .film-details, Aug 5 - Jason Goes to Hell -->
 											
@@ -252,8 +294,7 @@
 													<iframe class="w-100" src="https://www.youtube.com/embed/kJmNEJALe6k" frameborder="0" allowfullscreen></iframe>
 												</div>
 											</div>
-										</div><hr>	<!-- .film-details, Aug 5 - Jason X -->
-										
+										</div><hr>	<!-- Aug 5, .film-details - Jason X -->
 										<div class="d-flex scroll-content">
 											<div class="film-details">
 												<span class="clock-and-sch"><i class="fa fa-clock-o d-inline-block" aria-hidden="true"></i> 20:00</span>
@@ -276,8 +317,7 @@
 												</div>
 											</div>
 												
-										</div><hr>	<!-- .film-details, Aug 5 - Jason X -->
-										
+										</div><hr>	<!-- Aug 5, .film-details - Jason Goes to Hell -->
 										<div class="d-flex scroll-content">
 											<div class="film-details">
 												<span class="clock-and-sch"><i class="fa fa-clock-o d-inline-block" aria-hidden="true"></i> 22:00</span>
@@ -299,7 +339,7 @@
 													<iframe class="w-100" src="https://www.youtube.com/embed/ipbCUW3umJU" frameborder="0"  allowfullscreen></iframe>
 												</div>
 											</div>
-										</div><hr>	<!-- .film-details, Aug 5 - Freddy vs Jason -->
+										</div><hr>	<!-- Aug 5, .film-details - Freddy vs Jason -->
 										
 									</div>
 
@@ -331,8 +371,7 @@
 													<iframe class="w-100" src="https://www.youtube.com/embed/BkL9l7qovsE" frameborder="0"  allowfullscreen></iframe>
 												</div>
 											</div>
-										</div><hr>		<!-- August 6 .film-details - Casablanca -->
-										
+										</div><hr>		<!-- Aug 6, .film-details - Casablanca -->
 										<div class="d-flex scroll-content">
 											<div class="film-details">
 												<span class="clock-and-sch"><i class="fa fa-clock-o d-inline-block" aria-hidden="true"></i> 20:00</span>
@@ -355,8 +394,7 @@
 													<iframe class="w-100" src="https://www.youtube.com/embed/3qFYjkFCxiE" frameborder="0"  allowfullscreen></iframe>
 												</div>
 											</div>
-										</div><hr>		<!-- August 6 - What Ever Happened to Baby Jane? -->
-
+										</div><hr>		<!-- Aug 6, .film-details - What Ever Happened to Baby Jane? -->
 										<div class="d-flex scroll-content">
 											<div class="film-details">
 												<span class="clock-and-sch"><i class="fa fa-clock-o d-inline-block" aria-hidden="true"></i> 22:00</span>
@@ -379,7 +417,7 @@
 													<iframe class="w-100" src="https://www.youtube.com/embed/on2H8Qt5fgA" frameborder="0"  allowfullscreen></iframe>
 												</div>
 											</div>
-										</div><hr>		<!-- August 6 - Metropolis -->
+										</div><hr>		<!-- Aug 6, .film-details - Metropolis -->
 									</div>
 								</div>
 							</div>		<!-- August 6 -->
@@ -413,7 +451,6 @@
 												</div>
 											</div>
 										</div><hr>		<!-- Aug 7, .film-details - War of the Worlds -->
-										
 										<div class="d-flex scroll-content">
 											<div class="film-details">
 												<span class="clock-and-sch"><i class="fa fa-clock-o d-inline-block" aria-hidden="true"></i> 20:00</span>
@@ -437,7 +474,6 @@
 												</div>
 											</div>
 										</div><hr>		<!-- Aug 7, .film-details - Killer Klowns from Outer Space -->
-
 										<div class="d-flex scroll-content">
 											<div class="film-details">
 												<span class="clock-and-sch"><i class="fa fa-clock-o d-inline-block" aria-hidden="true"></i> 22:00</span>
@@ -453,14 +489,14 @@
 														<a href="#register"><button class="d-inline-flex btn btn-film-register align-left">Register</button></a>
 												</div>
 												
-											</div>		<!-- .film-details - Aug 7, Prince of Darkness -->
+											</div>		<!-- Aug 7, .film-details - Prince of Darkness -->
 											
 											<div class="col-5">
 												<div class="container-fluid img-fluid" class="vid-bg-1">
 													<iframe class="w-100" src="https://www.youtube.com/embed/PkBSEWy8WfY" frameborder="0" allowfullscreen></iframe>
 												</div>
 											</div>
-										</div><hr>		<!-- August 6 - Metropolis -->
+										</div><hr>		<!-- Aug 7, .film-details - Prince of Darkness -->
 									</div>
 								</div>
 							
@@ -495,7 +531,6 @@
 												</div>
 											</div>
 										</div><hr>		<!-- Aug 8, .film-details - Saving Christmas -->
-										
 										<div class="d-flex scroll-content">
 											<div class="film-details">
 												<span class="clock-and-sch"><i class="fa fa-clock-o d-inline-block" aria-hidden="true"></i> 18:00</span>
@@ -519,7 +554,6 @@
 												</div>
 											</div>
 										</div><hr>		<!-- Aug 8, .film-details - It's Pat: The Movie -->
-
 										<div class="d-flex scroll-content">
 											<div class="film-details">
 												<span class="clock-and-sch"><i class="fa fa-clock-o d-inline-block" aria-hidden="true"></i> 18:00</span>
@@ -541,11 +575,11 @@
 												<div class="container-fluid img-fluid" class="vid-bg-1">
 													<iframe class="w-100" src="https://www.youtube.com/embed/opiCMIN3PNg" frameborder="0" allowfullscreen></iframe>												</div>
 											</div>
-										</div><hr>		<!-- August 6 - Metropolis -->
+										</div><hr>		<!-- Aug 8, .film-details - Jaws: The Revenge -->
 									</div>
 								</div>
 							
-							</div>		<!-- August 7-->
+							</div>		<!-- August 8-->
 
 						</div>			<!-- tab-content -->
 					</div>
@@ -562,7 +596,7 @@
 						<div class="col-md-6" id="pg-col-left">
 							<div class="container w-100 m-0 px-3 pt-3">
 								<i class="d-inline fa fa-camera-retro display-3"></i>
-								<p class="pg-hd-text d-inline-block">BOFF Photo Gallery</p>
+								<p class="pg-hd-text d-inline-block">Photo Gallery</p>
 								<p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an Lorem ipsum dolor sit amet consetetur adipiscing elit. Suspendisse est odioconvallis.</p>
 							</div>
 						</div>
@@ -589,7 +623,7 @@
 									</div>
 									<!-- Modal footer -->
 									<div class="modal-footer">
-										<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
 									</div>
 								</div>
 							</div>

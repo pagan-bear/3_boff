@@ -6,86 +6,71 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- Font Awesome -->
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-		<link href="test.css" rel="stylesheet">
+		<link href="css/stylesheet.css" rel="stylesheet">
 	</head>
 	
 	<body>
-
-		<!-- Button trigger modal -->
-		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Search <i class="fa fa-search btn-secondary"></i></button>
-		
-		<!-- Modal -->
-		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Search event photos</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<div class="container-fluid">
+			<div class="container">
+				<h4>Registration Form</h4>
+				<div class="form-row">
+					<div class="form-group col-lg-6 form-inline">
+						 <label for="reg-fullname" class="col-form-label text-white w-25" id="reg-lbl-fullname">Full name:&nbsp;</label>
+						 <input type="text" class="form-control w-75" id="reg-fullname" placeholder="Full name">
+					 </div> <!-- full username -->
+					<div class="form-group col-lg-6 form-inline">
+						 <label for="reg-email" class="col-form-label text-white w-25" id="reg-lbl-email">Email:&nbsp;</label>
+						 <input type="email" class="form-control w-75" id="reg-email" placeholder="user.name@email-domain.com">
+					 </div>	<!-- email address -->
+				</div>		<!-- form row 1-->
+				<div class="form-row">
+					<div class="form-group col-lg-6 form-inline">	<!-- date checkboxes -->
+						<label for="reg-dates" class="col-form-label text-white w-25">Dates:&nbsp;</label>
+						<div class="form-inline w-75 justify-content-between">
+							<div class = "form-group">
+								<input type="checkbox" class="form-control" id="reg-chk-aug5">
+								<label for="reg-chck-aug5" class="Col-form-label text-white reg-chk-label">&nbsp;Aug 5<sup>th</sup></label>
+							</div>	<!-- checkbox 1 -->
+							<div class = "form-group">
+								<input type="checkbox" class="form-control" id="reg-chk-aug6">
+								<label for="reg-chck-aug6" class="Col-form-label text-white reg-chk-label">&nbsp;Aug 6<sup>th</sup></label>
+							</div>	<!-- checkbox 2 -->
+							<div class = "form-group">
+								<input type="checkbox" class="form-control" id="reg-chk-aug7">
+								<label for="reg-chck-aug7" class="Col-form-label text-white reg-chk-label">&nbsp;Aug 7<sup>th</sup></label>
+							</div>	<!-- checkbox 3 -->
+							<div class = "form-group">
+								<input type="checkbox" class="form-control" id="reg-chk-aug8">
+								<label for="reg-chck-aug8" class="Col-form-label text-white reg-chk-label">&nbsp;Aug 8<sup>th</sup></label>
+							</div>	<!-- checkbox 4-->
+						</div>
 					</div>
 					
-					<div class="modal-body">
-						<div class="row">
-							<div class="d-flex form-inline">
-								<label for="frm-filename" style="font-size: 1.3vw">Filename&nbsp;</label>
-								<input type="text" class="form-control form-control-small" placeholder="filename">
-								<div class="input-group-append">
-									<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">.ext</button>
-									<div class="dropdown-menu">
-										<a class="dropdown-item" href="#">.gif</a>
-										<a class="dropdown-item" href="#">.jpg/.jpeg</a>
-										<a class="dropdown-item" href="#">.jp2/.jpx</a>
-										<a class="dropdown-item" href="#">.pcd</a>
-										<a class="dropdown-item" href="#">.pdf</a>
-										<a class="dropdown-item" href="#">.tif/.tiff</a>
-									</div>
-								</div>
+					<div class="form-group col-lg-6 form-inline">
+						<label class="text-white w-25">Tickets:&nbsp;</label>
+						<div class="d-flex justify-content-between w-75">
+							<div class="form-group">
+								<select class="form-control" id="sel-num-tickets">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+								</select>
 							</div>
+							<button class="btn btn-film-register ml-auto">Register</button>
 						</div>
-						
-						<div class="row" style="margin-top:10px;">
-							<div class="d-flex form-inline">
-								<label for="frm-filename" style="font-size: 1.3vw">Year</label>
-								<div class="input-group-append">
-									<button class="btn btn-outline-secondary dropdown-toggle btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Year</button>
-									<div class="dropdown-menu">
-										<a class="dropdown-item" href="#">All</a>
-										<a class="dropdown-item" href="#">2017</a>
-										<a class="dropdown-item" href="#">2016</a>
-										<a class="dropdown-item" href="#">2015</a>
-									</div>
-								</div>
-
-								<div class="form-check mb-2 mr-sm-2">
-									<input class="form-check-input" type="checkbox" id="inlineFormCheck">
-									<label class="form-check-label" for="inlineFormCheck" style="font-size:1.1vw; padding-top:4px;">Save settings</label>
-								</div>
-
-							</div>
-						</div>
-
-						<div class="row">
-							<button type="submit" class="btn btn-primary mb-2">Submit</button>
-						</div>
-
 					</div>
-					
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary">Save changes</button>
-					</div>
-
 				</div>
-			</div>
+			</div>		<!-- form row 2 -->
 		</div>
 		
-		<!-- Bootstrap 4 -->
+		
+		<!-- Script files / libraries -->
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	
+		
 	</body>
 </html>
 		

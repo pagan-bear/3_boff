@@ -26,6 +26,10 @@ a.nav-link:hover { background-color: #f10f24; color: white!important; }
 a.nav-link:focus { background-color: #f10f24; color: white!important; }
 a.navbar-brand { margin: 0 5px;}
 i.fa { display: block; }
+#btn-ddn { width: 25px; height: 50px; background-color: #212121; }
+# ddm-social a.dropdownitem { font-family: 'Open Sans Condensed', sans-serif; }
+#ddm-social a:hover { background-color: #f10f24; color: white; }
+
 
 /* Carousel styles */
 .carousel { height: auto; width: 100%; margin: 20px; margin-bottom: 80px; border: 2px solid white; }
@@ -78,15 +82,16 @@ i.fa { display: block; }
 #festival-pricing { height: 150px; background-color: #212121; }
 
 /* Festival registration */
+#register { min-height: 300px; background-color: #333333; }
 .reg-p { margin-bottom: 0; }
 #reg-fullname, #reg-email { width: 200px; }
 #reg-sel-tickets { border-radius: 0px; padding-left: 3; margin: 0; width: auto; }
 .btn-danger { background-color: #f10f24; }
 .btn-dark, .btn-danger { border-radius: 0px; width: 100px; height: 38px; font-size: 1vw; }
 .reg-container { padding: 0; font-size: 1vw; }
-.reg-container-fluid { border: 1px solid #333; }
+.reg-container-fluid { border: 1px solid #212121; }
 .boxed { border: 1px solid #333; padding: 5px;}
-
+.reg-chk-label { font-size: inherit; }
 
 /* Festival schedule */
 .nav-tabs { font-family: 'Open Sans', sans-serif; }
@@ -120,7 +125,8 @@ i.fa { display: block; }
 
 /* Button styles */
 .btn { display: inline; color: white; text-transform: uppercase; border-radius: 0px; }
-.btn-film-register { background-color: #f10f24; color: white; margin-bottom: 0px; height: 3vw}
+.btn-film-register { background-color: #f10f24; color: white; margin-bottom: 0px; }
+/* .btn-film-register { background-color: #f10f24; color: white; margin-bottom: 0px; height: 3vw} */
 
 /* Photo gallery */
 .img-thumbnail { width: 125px ; height: 125px; border: 1px solid #333; }
