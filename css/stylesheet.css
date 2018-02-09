@@ -17,8 +17,8 @@ h2 { color: #333; padding-bottom: 25px; padding-top: 25px;}
 .navbar-collapse { background: #212121; }
 .nav.navbar { width: 70%;  padding: 1px; height: 50px; }
 .fa-map-marker { padding-left: 5px; }
-.logo-red { font-family: 'Titillium Web', cursive; font-size: 18px; color: #f10f24; font-weight: bold; padding-left:5px; padding-right: 3px;}
-.logo-white { font-family: 'Raleway', sans-serif; font-size: 18px; color: white; font-weight: bold; }
+.logo-red { font-family: 'Titillium Web', cursive; font-size: 2vw; color: #f10f24; font-weight: bold; padding-left:5px; padding-right: 3px;}
+.logo-white { font-family: 'Raleway', sans-serif; font-size: 2vw; color: white; font-weight: bold; }
 #navbar { background-color: #212121!important; }
 ul { font-family: 'Open Sans Condensed', sans-serif; }
 a.nav-link { padding: 5px 0px; }
@@ -29,7 +29,6 @@ i.fa { display: block; }
 #btn-ddn { width: 25px; height: 50px; background-color: #212121; }
 # ddm-social a.dropdownitem { font-family: 'Open Sans Condensed', sans-serif; }
 #ddm-social a:hover { background-color: #f10f24; color: white; }
-
 
 /* Carousel styles */
 .carousel { height: auto; width: 100%; margin: 20px; margin-bottom: 80px; border: 2px solid white; }
@@ -71,18 +70,23 @@ i.fa { display: block; }
 #block-left { padding-top: 5px; padding-bottom: 5px;}
 
 /* Festival summary */
-.border-square {   color: #b0b0b0;  border-radius:25%; border: 1px solid #b0b0b0; width:36px; }
+.border-square {   color: #b0b0b0;  border-radius:25%; border: 1px solid #b0b0b0; width: 36px; }
 #festival-summary i { padding: 0px; font-size: 32px; margin-right: 10px; color: #333; margin-top: 5px; }
 .card-subtext { font-size: 1.1vw; font-weight: bold; color: #212121; }
 #festival-summary .card { font-size: 1.4vw; border: 1px solid #333; }
 #festival-summary .card-text { color: #212121; text-shadow: 2px 3px lightgray}
-#festival-summary { margin: 0px 0px 0px 0px; padding: 0px, 0px, 0px, 0px; }
+#festival-summary { margin: 0; padding: 0; }
 
 /* Festival pricing */
 #festival-pricing { height: 150px; background-color: #212121; }
 
+/* Festival partners */
+#seal-of-bk { max-width: 200px; height: auto; }
+#bk-br-park-ico { max-width: 350px; height: auto; }
+
 /* Festival registration */
-#register { min-height: 300px; background-color: #333333; }
+
+#register { background-color: #333333; height: auto; }
 .reg-p { margin-bottom: 0; }
 #reg-fullname, #reg-email { width: 200px; }
 #reg-sel-tickets { border-radius: 0px; padding-left: 3; margin: 0; width: auto; }
@@ -91,7 +95,7 @@ i.fa { display: block; }
 .reg-container { padding: 0; font-size: 1vw; }
 .reg-container-fluid { border: 1px solid #212121; }
 .boxed { border: 1px solid #333; padding: 5px;}
-.reg-chk-label { font-size: inherit; }
+.reg-chk-label { font-size: 1.25vw; }
 
 /* Festival schedule */
 .nav-tabs { font-family: 'Open Sans', sans-serif; }
@@ -126,7 +130,8 @@ i.fa { display: block; }
 /* Button styles */
 .btn { display: inline; color: white; text-transform: uppercase; border-radius: 0px; }
 .btn-film-register { background-color: #f10f24; color: white; margin-bottom: 0px; }
-/* .btn-film-register { background-color: #f10f24; color: white; margin-bottom: 0px; height: 3vw} */
+.btn-film-register:hover { color: #333; }
+
 
 /* Photo gallery */
 .img-thumbnail { width: 125px ; height: 125px; border: 1px solid #333; }
@@ -173,13 +178,18 @@ a:hover { text-decoration: none; }
 .text-red { color: #f10f24; font-weight: bold; }
 
 /* The Standard Bootstrap 4.x Breakpoints */
-@media all and (max-width: 1199px) { }
-@media all and (max-width: 991px) { 
+@media all and (max-width: 1199px) { 
+	#register { min-height: 300px; }
+}
+@media all and (max-width: 991px) {
+	#register { min-height: 350px; }
 	#time-icon { display: none; }
 	#block-left p, span { text-align: center; }
 	#block-right p, span { text-align: center; }
+	#bk-br-park-ico { display: block; margin: 0 auto;  margin-bottom: 10px; }
+
 }
 @media all and (max-width: 768px) {
-	.nav.navbar { padding: 5px 0px; }
+	.nav.navbar { padding: 5px 0px; } 
 }
 @media all and (max-width: 575px) { }
