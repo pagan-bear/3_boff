@@ -79,7 +79,7 @@ i.fa { display: block; }
 #festival-summary { margin: 0; padding: 0; }
 
 /* Festival pricing */
-#festival-pricing { height: 140px; background-color: #212121; }
+#festival-pricing { height: 140px; background-color: #000; }
 #fp-text-style  { padding-top: 85px; }
 #fp-text-style2 { color:#f10f24; font-weight: bold; font-size: 24px;text-shadow:2px 2px #909090; }
 
@@ -131,9 +131,10 @@ i.fa { display: block; }
 
 /* Button styles */
 .btn { display: inline; color: white; text-transform: uppercase; border-radius: 0px; }
-.btn-film-register { background-color: #f10f24; color: white; margin-bottom: 0px; }
+.btn-film-register { background-color: #f10f24; color: white; margin-bottom: 20px; }
+.btn-film-register1 { background-color: #f10f24; color: white; margin-bottom: 40px; }
+.btn-film-register2 { background-color: #f10f24; color: white; margin-bottom: 0px; }
 .btn-film-register:hover { color: #333; }
-
 
 /* Photo gallery */
 .img-thumbnail { width: 125px ; height: 125px; border: 1px solid #333; }
@@ -182,7 +183,7 @@ a:hover { text-decoration: none; }
 	/* colors */ 
 	--gray7: #212121;
 	--gray1: #333333;
-	--gray8: #707070
+	--gray8: #707070;
 	--gray6: #777777;
 	--gray3: #7b7b7b;
 	--gray4: #909090;

@@ -1,8 +1,0 @@
-body { font-family: 'Roboto', sans-serif; font-size: 1vw; }
-.reg-p { margin-bottom: 0; }
-#reg-fullname, #reg-email { width: 200px; }
-#reg-sel-tickets { border-radius: 0px; padding-left: 3; margin: 0; width: auto; }
-.btn-danger { background-color: #f10f24; }
-.btn-dark, .btn-danger { border-radius: 0px; width: 100px; height: 38px; font-size: 1vw; }
-.reg-container { background-color: lightcyan; width: 70%; padding: 0; }
-.reg-container-fluid { background-color: lightgray; }
